@@ -1,0 +1,1499 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Elahlam travel</title>
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+  <!-- Bootstrap core CSS -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <!-- Material Design Bootstrap -->
+  <link href="css/mdb.min.css" rel="stylesheet">
+  <!-- Swiper For Carsoul -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/css/swiper.min.css">
+  <!-- Your custom styles (optional) -->
+  <link href="css/style.css" rel="stylesheet">
+  <style>
+    body {
+      position: relative;
+      overflow: hidden;
+      overflow-x: hidden !important
+    }
+    @media (max-width:768px){
+      body {
+        overflow-x: auto
+      }
+    }
+
+    .loader-page {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: #fff;
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      z-index: 55555;
+
+    }
+
+    .trinity-rings-spinner,
+    .trinity-rings-spinner * {
+      box-sizing: border-box;
+    }
+
+    .trinity-rings-spinner {
+      height: 66px;
+      width: 66px;
+      padding: 3px;
+      position: absolute;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: row;
+      overflow: hidden;
+      box-sizing: border-box;
+      top: 50%;
+    left: 50%;
+    margin-left: -50px;
+    margin-top: -50px;
+    }
+
+    .trinity-rings-spinner .circle {
+      position: absolute;
+      display: block;
+      border-radius: 50%;
+      border: 3px solid #002853;
+      opacity: 1;
+    }
+
+    .trinity-rings-spinner .circle:nth-child(1) {
+      height: 60px;
+      width: 60px;
+      animation: trinity-rings-spinner-circle1-animation 1.5s infinite linear;
+      border-width: 3px;
+    }
+
+    .trinity-rings-spinner .circle:nth-child(2) {
+      height: calc(60px * 0.65);
+      width: calc(60px * 0.65);
+      animation: trinity-rings-spinner-circle2-animation 1.5s infinite linear;
+      border-width: 2px;
+    }
+
+    .trinity-rings-spinner .circle:nth-child(3) {
+      height: calc(60px * 0.1);
+      width: calc(60px * 0.1);
+      animation: trinity-rings-spinner-circle3-animation 1.5s infinite linear;
+      border-width: 1px;
+    }
+
+    @keyframes trinity-rings-spinner-circle1-animation {
+      0% {
+        transform: rotateZ(20deg) rotateY(0deg);
+      }
+
+      100% {
+        transform: rotateZ(100deg) rotateY(360deg);
+      }
+    }
+
+    @keyframes trinity-rings-spinner-circle2-animation {
+      0% {
+        transform: rotateZ(100deg) rotateX(0deg);
+      }
+
+      100% {
+        transform: rotateZ(0deg) rotateX(360deg);
+      }
+    }
+
+    @keyframes trinity-rings-spinner-circle3-animation {
+      0% {
+        transform: rotateZ(100deg) rotateX(-360deg);
+      }
+
+      100% {
+        transform: rotateZ(-360deg) rotateX(360deg);
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg fixed-top navbar-dark scrolling-navbar">
+    <div class="container">
+
+      <!-- Brand -->
+      <a class="navbar-brand" href="index.html">
+        <strong class=" text-uppercase">elahlam</strong>
+      </a>
+
+      <!-- Collapse -->
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Links -->
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+        <!-- Left -->
+        <ul class="navbar-nav mr-auto justify-content-center">
+          <li class="nav-item active">
+            <a class="nav-link text-uppercase" href="index.html">Home
+              <span class="sr-only">(current)</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-uppercase" href="packages.html">Packages</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-uppercase" href="locations.html">Locations </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-uppercase" href="payment.html">PAYMENT</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-uppercase" href="guide.html">GUIDE</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-uppercase" href="faq.html">faq</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-uppercase" href="contact.html">Contact</a>
+          </li>
+        </ul>
+
+        <!-- Right -->
+        <ul class="navbar-nav nav-flex-icons right-side">
+          <li class="nav-item">
+            <h4>
+              <i class="fa fa-phone-square fa-lg" aria-hidden="true"></i>
+              +2 01221501020
+            </h4>
+          </li>
+          <li class="nav-item">
+            <p>
+              &MediumSpace; 24/7 Available
+            </p>
+          </li>
+        </ul>
+
+      </div>
+
+    </div>
+  </nav>
+  <!-- Navbar -->
+  <!-- data-ride="carousel" -->
+  <!--Carousel Wrapper-->
+  <div id="carousel-example-1z" class="carousel slide carousel-fade">
+
+    <!--Indicators-->
+    <ol class="carousel-indicators">
+      <li data-target="#carousel-example-1z" data-slide-to="0" class="active"></li>
+      <li data-target="#carousel-example-1z" data-slide-to="1"></li>
+      <li data-target="#carousel-example-1z" data-slide-to="2"></li>
+    </ol>
+    <!--/.Indicators-->
+
+    <!--Slides-->
+    <div class="carousel-inner" role="listbox">
+
+      <!--First slide-->
+      <div class="carousel-item active">
+        <div class="view"
+          style="background-image: url('./img/Header/header.png'); background-repeat: no-repeat; background-size: cover;">
+
+          <!-- Mask & flexbox options-->
+          <div class="mask rgba-black-light d-flex justify-content-center align-items-center">
+
+            <!-- Content -->
+            <div class="text-center white-text mx-5 wow fadeIn">
+              <h1 class="mb-4">
+                <strong class="overlay text-uppercase d-block">
+                  ElAhlam Travel
+                </strong>
+              </h1>
+
+              <div>
+                <input class="form-control form-control-lg search-box m-auto d-inline-block" type="text"
+                  placeholder="Enter your destination">
+                <i class="fas fa-search" aria-hidden="true"></i>
+              </div>
+
+
+            </div>
+            <!-- Content -->
+
+          </div>
+          <!-- Mask & flexbox options-->
+
+        </div>
+      </div>
+      <!--/First slide-->
+
+      <!--Second slide-->
+      <div class="carousel-item">
+        <div class="view"
+          style="background-image: url('./img/Header/bigstock-Colosseum-At-Sunrise-Rome-It-267474112.png'); background-repeat: no-repeat; background-size: cover;">
+
+          <!-- Mask & flexbox options-->
+          <div class="mask rgba-black-light d-flex justify-content-center align-items-center">
+
+            <!-- Content -->
+            <div class="text-center white-text mx-5 wow fadeIn ">
+              <h1 class="mb-4">
+                <strong class="overlay text-uppercase d-block ">
+                  ElAhlam Travel
+                </strong>
+              </h1>
+
+              <div>
+                <input class="form-control form-control-lg search-box m-auto d-inline-block" type="text"
+                  placeholder="Enter your destination">
+                <i class="fas fa-search" aria-hidden="true"></i>
+              </div>
+
+
+            </div>
+            <!-- Content -->
+
+          </div>
+          <!-- Mask & flexbox options-->
+
+        </div>
+      </div>
+      <!--/Second slide-->
+
+      <!--Third slide-->
+      <div class="carousel-item">
+        <div class="view"
+          style="background-image: url('./img/Header/MW-HE975_hawaii_20190304120303_ZH.jpg'); background-repeat: no-repeat; background-size: cover;">
+
+          <!-- Mask & flexbox options-->
+          <div class="mask rgba-black-light d-flex justify-content-center align-items-center">
+            <!-- Content -->
+            <div class="text-center white-text mx-5 wow fadeIn">
+              <h1 class="mb-4">
+                <strong class="overlay text-uppercase d-block">
+                  ElAhlam Travel
+                </strong>
+              </h1>
+
+              <div>
+                <input class="form-control form-control-lg search-box m-auto d-inline-block" type="text"
+                  placeholder="Enter your destination">
+                <i class="fas fa-search" aria-hidden="true"></i>
+              </div>
+
+
+            </div>
+            <!-- Content -->
+
+          </div>
+          <!-- Mask & flexbox options-->
+
+        </div>
+      </div>
+      <!--/Third slide-->
+
+    </div>
+    <!--/.Slides-->
+
+    <!--Controls-->
+    <a class="carousel-control-prev" href="#carousel-example-1z" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carousel-example-1z" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+    <!--/.Controls-->
+
+  </div>
+  <!--/.Carousel Wrapper-->
+
+  <!--Main layout-->
+  <main>
+    <section class="locations">
+      <div class="pl-5 pt-5 d-block text-center">
+        <h3>Browse Locations</h3>
+        <img src="img/locations/Map Icon.png" alt="" srcset="">
+      </div>
+      <!-- Swiper -->
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"
+            style="background-image:url('./img/locations/article-2479124-1909F1B700000578-520_634x519.png')"></div>
+          <div class="swiper-slide" style="background-image:url('./img/locations/Gradient Hover.png')"></div>
+          <div class="swiper-slide"
+            style="background-image:url('./img/locations/Hero-Uzbekistan-Locals-visit-Shahi-Zinda-Photo-credit-iStock-Ozbalci-2-1920x1080.png')">
+          </div>
+          <div class="swiper-slide"
+            style="background-image:url('./img/locations/Ocean_near_Maslinica_on_Solta_in_Croatia.png')"></div>
+          <div class="swiper-slide"
+            style="background-image:url('./img/locations/article-2479124-1909F1B700000578-520_634x519.png')"></div>
+          <div class="swiper-slide"
+            style="background-image:url('./img/locations/article-2479124-1909F1B700000578-520_634x519.png')"></div>
+          <div class="swiper-slide" style="background-image:url('./img/locations/Gradient Hover.png')"></div>
+          <div class="swiper-slide"
+            style="background-image:url('./img/locations/Hero-Uzbekistan-Locals-visit-Shahi-Zinda-Photo-credit-iStock-Ozbalci-2-1920x1080.png')">
+          </div>
+          <div class="swiper-slide"
+            style="background-image:url('./img/locations/Ocean_near_Maslinica_on_Solta_in_Croatia.png')"></div>
+          <div class="swiper-slide"
+            style="background-image:url('./img/locations/article-2479124-1909F1B700000578-520_634x519.png')"></div>
+          <div class="swiper-slide"
+            style="background-image:url('./img/locations/article-2479124-1909F1B700000578-520_634x519.png')"></div>
+          <div class="swiper-slide" style="background-image:url('./img/locations/Gradient Hover.png')"></div>
+          <div class="swiper-slide"
+            style="background-image:url('./img/locations/Hero-Uzbekistan-Locals-visit-Shahi-Zinda-Photo-credit-iStock-Ozbalci-2-1920x1080.png')">
+          </div>
+          <div class="swiper-slide"
+            style="background-image:url('./img/locations/Ocean_near_Maslinica_on_Solta_in_Croatia.png')"></div>
+          <div class="swiper-slide"
+            style="background-image:url('./img/locations/article-2479124-1909F1B700000578-520_634x519.png')"></div>
+
+        </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+      </div>
+
+
+      <!-- Swiper JS -->
+    </section>
+    <div class="container">
+
+      <!--Section: Main info-->
+      <section class="mt-5 wow fadeIn content">
+
+        <!--Grid row-->
+        <div class="row">
+
+          <!--Grid column-->
+          <div class="col-md-6 mb-4">
+            <h3 class="font-weight-bold">Why Vacation With ElAhlamTravel?</h3>
+            <i>Better Travel Packages</i> <br><br>
+            <p>
+              Whether you're a seasoned traveler looking to check another destination off your list or someone trying to
+              make that once-in-a-lifetime vacation happen, ElAhlamTravel can help you get there. For more than 50
+              years, we've offered travel packages to the world's most captivating places. ElAhlamTravel knows what's
+              important once you reach your destination - the sights, the scenes, the locals, and the legends. So, we
+              get you exactly where you want to be.
+
+              <br><br><br>
+
+              Now you can take free time to a whole new level with a ElAhlamTravel Lite tour.
+              Enjoy the best of both worlds in tour packages—with the benefits of our vacation planning expertise
+              without the scheduled itinerary. Your days are a blank canvas that gives you the choice of a variety of
+              excursions, activities, and locales that interest you. And we’ll be there to make it happen your way.
+            </p>
+
+
+          </div>
+          <!--Grid column-->
+
+          <!--Grid column-->
+          <div class="col-md-6 mb-4">
+
+            <!-- Main heading -->
+            <h5>Travel through the Amazing</h5>
+            <h1 class="text-uppercase font-weight-bold" style="color: #002853">world</h1>
+            <h5 class="text-uppercase font-weight-bolder">Greater Tourism</h5>
+            <hr class="mb-3">
+            <p>Planning a vacation is a major assignment. There's the research, the reservations, and the logistics -
+              not to mention currency conversions and linguistic barriers that can really test your math and language
+              skills. An escorted tour takes on the challenge, doing all of the homework and planning for you. If you're
+              new to the world of touring, We will save your time and give you our great experience.
+            </p>
+            <!-- Main heading -->
+
+            <!-- CTA -->
+            <a href="#" class="btn btn-outline-blue">Check Travel Packages </a>
+
+
+          </div>
+          <!--Grid column-->
+
+        </div>
+        <!--Grid row-->
+
+      </section>
+      <!--Section: Main info-->
+
+      <hr class="my-5">
+
+      <!--Section: Main features & Quick Start-->
+      <section class="packges">
+        <h2 class="text-uppercase font-weight-bold font-italic">OUR Popular Packages</h2>
+        <!-- Swiper -->
+        <div class="swiper-container">
+          <div class="swiper-wrapper ">
+
+            <div class="swiper-slide">
+              <!-- Card -->
+              <div class="card">
+
+                <!-- Card image -->
+                <img class="card-img-top" src="img/packages/1.png" alt="Card image cap">
+
+                <!-- Card content -->
+                <div class="card-body">
+                  <div class="row">
+                    <div class="col-8" style="border-right: 1px solid #666">
+                      <!-- Title -->
+                      <h5 class="card-title"><a>A Trip to Villa De Cosa 7 Days 6 Nights</a></h5>
+                      <!-- Text -->
+                      <br>
+                      <p class="card-text"> <i class="fa fa-location-arrow" aria-hidden="true"></i> Kauai, Hawaii.</p>
+                      <!-- Button -->
+                    </div>
+                    <div class="col-4 float-right">
+                      <p>7 Days</p>
+                      <span>
+                        <h5>$136</h5>person
+                      </span>
+                      <br>
+                      <span class="small"> <i class="fa fa-star p-1"
+                          style="background: yellow;color:#fff;border-radius:50%" aria-hidden="true"></i> 4.5 (14)
+                      </span>
+                    </div>
+                  </div>
+
+                </div>
+
+              </div>
+              <!-- Card -->
+            </div>
+            <div class="swiper-slide">
+              <div class="card">
+
+                <!-- Card image -->
+                <img class="card-img-top" src="img/packages/1.png" alt="Card image cap">
+
+                <!-- Card content -->
+                <div class="card-body">
+                  <div class="row">
+                    <div class="col-8" style="border-right: 1px solid #666">
+                      <!-- Title -->
+                      <h5 class="card-title"><a>A Trip to Villa De Cosa 7 Days 6 Nights</a></h5>
+                      <!-- Text -->
+                      <br>
+                      <p class="card-text"> <i class="fa fa-location-arrow" aria-hidden="true"></i> Kauai, Hawaii.</p>
+                      <!-- Button -->
+                    </div>
+                    <div class="col-4 float-right">
+                      <p>7 Days</p>
+                      <span>
+                        <h5>$136</h5>person
+                      </span>
+                      <br>
+                      <span class="small"> <i class="fa fa-star p-1"
+                          style="background: yellow;color:#fff;border-radius:50%" aria-hidden="true"></i> 4.5 (14)
+                      </span>
+                    </div>
+                  </div>
+
+                </div>
+
+              </div>
+              <!-- Card -->
+            </div>
+            <div class="swiper-slide">
+              <div class="card">
+
+                <!-- Card image -->
+                <img class="card-img-top" src="img/packages/1.png" alt="Card image cap">
+
+                <!-- Card content -->
+                <div class="card-body">
+                  <div class="row">
+                    <div class="col-8" style="border-right: 1px solid #666">
+                      <!-- Title -->
+                      <h5 class="card-title"><a>A Trip to Villa De Cosa 7 Days 6 Nights</a></h5>
+                      <!-- Text -->
+                      <br>
+                      <p class="card-text"> <i class="fa fa-location-arrow" aria-hidden="true"></i> Kauai, Hawaii.</p>
+                      <!-- Button -->
+                    </div>
+                    <div class="col-4 float-right">
+                      <p>7 Days</p>
+                      <span>
+                        <h5>$136</h5>person
+                      </span>
+                      <br>
+                      <span class="small"> <i class="fa fa-star p-1"
+                          style="background: yellow;color:#fff;border-radius:50%" aria-hidden="true"></i> 4.5 (14)
+                      </span>
+                    </div>
+                  </div>
+
+                </div>
+
+              </div>
+              <!-- Card -->
+            </div>
+            <div class="swiper-slide">
+              <div class="card">
+
+                <!-- Card image -->
+                <img class="card-img-top" src="img/packages/1.png" alt="Card image cap">
+
+                <!-- Card content -->
+                <div class="card-body">
+                  <div class="row">
+                    <div class="col-8" style="border-right: 1px solid #666">
+                      <!-- Title -->
+                      <h5 class="card-title"><a>A Trip to Villa De Cosa 7 Days 6 Nights</a></h5>
+                      <!-- Text -->
+                      <br>
+                      <p class="card-text"> <i class="fa fa-location-arrow" aria-hidden="true"></i> Kauai, Hawaii.</p>
+                      <!-- Button -->
+                    </div>
+                    <div class="col-4 float-right">
+                      <p>7 Days</p>
+                      <span>
+                        <h5>$136</h5>person
+                      </span>
+                      <br>
+                      <span class="small"> <i class="fa fa-star p-1"
+                          style="background: yellow;color:#fff;border-radius:50%" aria-hidden="true"></i> 4.5 (14)
+                      </span>
+                    </div>
+                  </div>
+
+                </div>
+
+              </div>
+              <!-- Card -->
+            </div>
+            <div class="swiper-slide">
+              <div class="card">
+
+                <!-- Card image -->
+                <img class="card-img-top" src="img/packages/1.png" alt="Card image cap">
+
+                <!-- Card content -->
+                <div class="card-body">
+                  <div class="row">
+                    <div class="col-8" style="border-right: 1px solid #666">
+                      <!-- Title -->
+                      <h5 class="card-title"><a>A Trip to Villa De Cosa 7 Days 6 Nights</a></h5>
+                      <!-- Text -->
+                      <br>
+                      <p class="card-text"> <i class="fa fa-location-arrow" aria-hidden="true"></i> Kauai, Hawaii.</p>
+                      <!-- Button -->
+                    </div>
+                    <div class="col-4 float-right">
+                      <p>7 Days</p>
+                      <span>
+                        <h5>$136</h5>person
+                      </span>
+                      <br>
+                      <span class="small"> <i class="fa fa-star p-1"
+                          style="background: yellow;color:#fff;border-radius:50%" aria-hidden="true"></i> 4.5 (14)
+                      </span>
+                    </div>
+                  </div>
+
+                </div>
+
+              </div>
+              <!-- Card -->
+            </div>
+            <div class="swiper-slide">
+              <div class="card">
+
+                <!-- Card image -->
+                <img class="card-img-top" src="img/packages/1.png" alt="Card image cap">
+
+                <!-- Card content -->
+                <div class="card-body">
+                  <div class="row">
+                    <div class="col-8" style="border-right: 1px solid #666">
+                      <!-- Title -->
+                      <h5 class="card-title"><a>A Trip to Villa De Cosa 7 Days 6 Nights</a></h5>
+                      <!-- Text -->
+                      <br>
+                      <p class="card-text"> <i class="fa fa-location-arrow" aria-hidden="true"></i> Kauai, Hawaii.</p>
+                      <!-- Button -->
+                    </div>
+                    <div class="col-4 float-right">
+                      <p>7 Days</p>
+                      <span>
+                        <h5>$136</h5>person
+                      </span>
+                      <br>
+                      <span class="small"> <i class="fa fa-star p-1"
+                          style="background: yellow;color:#fff;border-radius:50%" aria-hidden="true"></i> 4.5 (14)
+                      </span>
+                    </div>
+                  </div>
+
+                </div>
+
+              </div>
+              <!-- Card -->
+            </div>
+            <div class="swiper-slide">
+              <div class="card">
+
+                <!-- Card image -->
+                <img class="card-img-top" src="img/packages/1.png" alt="Card image cap">
+
+                <!-- Card content -->
+                <div class="card-body">
+                  <div class="row">
+                    <div class="col-8" style="border-right: 1px solid #666">
+                      <!-- Title -->
+                      <h5 class="card-title"><a>A Trip to Villa De Cosa 7 Days 6 Nights</a></h5>
+                      <!-- Text -->
+                      <br>
+                      <p class="card-text"> <i class="fa fa-location-arrow" aria-hidden="true"></i> Kauai, Hawaii.</p>
+                      <!-- Button -->
+                    </div>
+                    <div class="col-4 float-right">
+                      <p>7 Days</p>
+                      <span>
+                        <h5>$136</h5>person
+                      </span>
+                      <br>
+                      <span class="small"> <i class="fa fa-star p-1"
+                          style="background: yellow;color:#fff;border-radius:50%" aria-hidden="true"></i> 4.5 (14)
+                      </span>
+                    </div>
+                  </div>
+
+                </div>
+
+              </div>
+              <!-- Card -->
+            </div>
+            <div class="swiper-slide">
+              <div class="card">
+
+                <!-- Card image -->
+                <img class="card-img-top" src="img/packages/1.png" alt="Card image cap">
+
+                <!-- Card content -->
+                <div class="card-body">
+                  <div class="row">
+                    <div class="col-8" style="border-right: 1px solid #666">
+                      <!-- Title -->
+                      <h5 class="card-title"><a>A Trip to Villa De Cosa 7 Days 6 Nights</a></h5>
+                      <!-- Text -->
+                      <br>
+                      <p class="card-text"> <i class="fa fa-location-arrow" aria-hidden="true"></i> Kauai, Hawaii.</p>
+                      <!-- Button -->
+                    </div>
+                    <div class="col-4 float-right">
+                      <p>7 Days</p>
+                      <span>
+                        <h5>$136</h5>person
+                      </span>
+                      <br>
+                      <span class="small"> <i class="fa fa-star p-1"
+                          style="background: yellow;color:#fff;border-radius:50%" aria-hidden="true"></i> 4.5 (14)
+                      </span>
+                    </div>
+                  </div>
+
+                </div>
+
+              </div>
+              <!-- Card -->
+            </div>
+            <div class="swiper-slide">
+              <div class="card">
+
+                <!-- Card image -->
+                <img class="card-img-top" src="img/packages/1.png" alt="Card image cap">
+
+                <!-- Card content -->
+                <div class="card-body">
+                  <div class="row">
+                    <div class="col-8" style="border-right: 1px solid #666">
+                      <!-- Title -->
+                      <h5 class="card-title"><a>A Trip to Villa De Cosa 7 Days 6 Nights</a></h5>
+                      <!-- Text -->
+                      <br>
+                      <p class="card-text"> <i class="fa fa-location-arrow" aria-hidden="true"></i> Kauai, Hawaii.</p>
+                      <!-- Button -->
+                    </div>
+                    <div class="col-4 float-right">
+                      <p>7 Days</p>
+                      <span>
+                        <h5>$136</h5>person
+                      </span>
+                      <br>
+                      <span class="small"> <i class="fa fa-star p-1"
+                          style="background: yellow;color:#fff;border-radius:50%" aria-hidden="true"></i> 4.5 (14)
+                      </span>
+                    </div>
+                  </div>
+
+                </div>
+
+              </div>
+              <!-- Card -->
+            </div>
+            <div class="swiper-slide">
+              <div class="card">
+
+                <!-- Card image -->
+                <img class="card-img-top" src="img/packages/1.png" alt="Card image cap">
+
+                <!-- Card content -->
+                <div class="card-body">
+                  <div class="row">
+                    <div class="col-8" style="border-right: 1px solid #666">
+                      <!-- Title -->
+                      <h5 class="card-title"><a>A Trip to Villa De Cosa 7 Days 6 Nights</a></h5>
+                      <!-- Text -->
+                      <br>
+                      <p class="card-text"> <i class="fa fa-location-arrow" aria-hidden="true"></i> Kauai, Hawaii.</p>
+                      <!-- Button -->
+                    </div>
+                    <div class="col-4 float-right">
+                      <p>7 Days</p>
+                      <span>
+                        <h5>$136</h5>person
+                      </span>
+                      <br>
+                      <span class="small"> <i class="fa fa-star p-1"
+                          style="background: yellow;color:#fff;border-radius:50%" aria-hidden="true"></i> 4.5 (14)
+                      </span>
+                    </div>
+                  </div>
+
+                </div>
+
+              </div>
+              <!-- Card -->
+            </div>
+
+            <!-- Add Arrows -->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+
+
+
+
+          </div>
+          <!-- Add Pagination -->
+          <div class="swiper-pagination"></div>
+        </div>
+
+      </section>
+      <!--Section: Main features & Quick Start-->
+      <section class="packges2">
+        <div class="swiper-container">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="card">
+
+                <!-- Card image -->
+                <img class="card-img-top" src="img/packages/1.png" alt="Card image cap">
+
+                <!-- Card content -->
+                <div class="card-body">
+                  <div class="row">
+                    <div class="col-8" style="border-right: 1px solid #666">
+                      <!-- Title -->
+                      <h5 class="card-title"><a>A Trip to Villa De Cosa 7 Days 6 Nights</a></h5>
+                      <!-- Text -->
+                      <br>
+                      <p class="card-text"> <i class="fa fa-location-arrow" aria-hidden="true"></i> Kauai, Hawaii.</p>
+                      <!-- Button -->
+                    </div>
+                    <div class="col-4 float-right">
+                      <p>7 Days</p>
+                      <span>
+                        <h5>$136</h5>person
+                      </span>
+                      <br>
+                      <span class="small"> <i class="fa fa-star p-1"
+                          style="background: yellow;color:#fff;border-radius:50%" aria-hidden="true"></i> 4.5 (14)
+                      </span>
+                    </div>
+                  </div>
+
+                </div>
+
+              </div>
+              <!-- Card -->
+            </div>
+            <div class="swiper-slide">
+              <div class="card">
+
+                <!-- Card image -->
+                <img class="card-img-top" src="img/packages/1.png" alt="Card image cap">
+
+                <!-- Card content -->
+                <div class="card-body">
+                  <div class="row">
+                    <div class="col-8" style="border-right: 1px solid #666">
+                      <!-- Title -->
+                      <h5 class="card-title"><a>A Trip to Villa De Cosa 7 Days 6 Nights</a></h5>
+                      <!-- Text -->
+                      <br>
+                      <p class="card-text"> <i class="fa fa-location-arrow" aria-hidden="true"></i> Kauai, Hawaii.</p>
+                      <!-- Button -->
+                    </div>
+                    <div class="col-4 float-right">
+                      <p>7 Days</p>
+                      <span>
+                        <h5>$136</h5>person
+                      </span>
+                      <br>
+                      <span class="small"> <i class="fa fa-star p-1"
+                          style="background: yellow;color:#fff;border-radius:50%" aria-hidden="true"></i> 4.5 (14)
+                      </span>
+                    </div>
+                  </div>
+
+                </div>
+
+              </div>
+              <!-- Card -->
+            </div>
+            <div class="swiper-slide">
+              <div class="card">
+
+                <!-- Card image -->
+                <img class="card-img-top" src="img/packages/1.png" alt="Card image cap">
+
+                <!-- Card content -->
+                <div class="card-body">
+                  <div class="row">
+                    <div class="col-8" style="border-right: 1px solid #666">
+                      <!-- Title -->
+                      <h5 class="card-title"><a>A Trip to Villa De Cosa 7 Days 6 Nights</a></h5>
+                      <!-- Text -->
+                      <br>
+                      <p class="card-text"> <i class="fa fa-location-arrow" aria-hidden="true"></i> Kauai, Hawaii.</p>
+                      <!-- Button -->
+                    </div>
+                    <div class="col-4 float-right">
+                      <p>7 Days</p>
+                      <span>
+                        <h5>$136</h5>person
+                      </span>
+                      <br>
+                      <span class="small"> <i class="fa fa-star p-1"
+                          style="background: yellow;color:#fff;border-radius:50%" aria-hidden="true"></i> 4.5 (14)
+                      </span>
+                    </div>
+                  </div>
+
+                </div>
+
+              </div>
+              <!-- Card -->
+            </div>
+            <div class="swiper-slide">
+              <div class="card">
+
+                <!-- Card image -->
+                <img class="card-img-top" src="img/packages/1.png" alt="Card image cap">
+
+                <!-- Card content -->
+                <div class="card-body">
+                  <div class="row">
+                    <div class="col-8" style="border-right: 1px solid #666">
+                      <!-- Title -->
+                      <h5 class="card-title"><a>A Trip to Villa De Cosa 7 Days 6 Nights</a></h5>
+                      <!-- Text -->
+                      <br>
+                      <p class="card-text"> <i class="fa fa-location-arrow" aria-hidden="true"></i> Kauai, Hawaii.</p>
+                      <!-- Button -->
+                    </div>
+                    <div class="col-4 float-right">
+                      <p>7 Days</p>
+                      <span>
+                        <h5>$136</h5>person
+                      </span>
+                      <br>
+                      <span class="small"> <i class="fa fa-star p-1"
+                          style="background: yellow;color:#fff;border-radius:50%" aria-hidden="true"></i> 4.5 (14)
+                      </span>
+                    </div>
+                  </div>
+
+                </div>
+
+              </div>
+              <!-- Card -->
+            </div>
+            <div class="swiper-slide">
+              <div class="card">
+
+                <!-- Card image -->
+                <img class="card-img-top" src="img/packages/1.png" alt="Card image cap">
+
+                <!-- Card content -->
+                <div class="card-body">
+                  <div class="row">
+                    <div class="col-8" style="border-right: 1px solid #666">
+                      <!-- Title -->
+                      <h5 class="card-title"><a>A Trip to Villa De Cosa 7 Days 6 Nights</a></h5>
+                      <!-- Text -->
+                      <br>
+                      <p class="card-text"> <i class="fa fa-location-arrow" aria-hidden="true"></i> Kauai, Hawaii.</p>
+                      <!-- Button -->
+                    </div>
+                    <div class="col-4 float-right">
+                      <p>7 Days</p>
+                      <span>
+                        <h5>$136</h5>person
+                      </span>
+                      <br>
+                      <span class="small"> <i class="fa fa-star p-1"
+                          style="background: yellow;color:#fff;border-radius:50%" aria-hidden="true"></i> 4.5 (14)
+                      </span>
+                    </div>
+                  </div>
+
+                </div>
+
+              </div>
+              <!-- Card -->
+            </div>
+            <div class="swiper-slide">
+              <div class="card">
+
+                <!-- Card image -->
+                <img class="card-img-top" src="img/packages/1.png" alt="Card image cap">
+
+                <!-- Card content -->
+                <div class="card-body">
+                  <div class="row">
+                    <div class="col-8" style="border-right: 1px solid #666">
+                      <!-- Title -->
+                      <h5 class="card-title"><a>A Trip to Villa De Cosa 7 Days 6 Nights</a></h5>
+                      <!-- Text -->
+                      <br>
+                      <p class="card-text"> <i class="fa fa-location-arrow" aria-hidden="true"></i> Kauai, Hawaii.</p>
+                      <!-- Button -->
+                    </div>
+                    <div class="col-4 float-right">
+                      <p>7 Days</p>
+                      <span>
+                        <h5>$136</h5>person
+                      </span>
+                      <br>
+                      <span class="small"> <i class="fa fa-star p-1"
+                          style="background: yellow;color:#fff;border-radius:50%" aria-hidden="true"></i> 4.5 (14)
+                      </span>
+                    </div>
+                  </div>
+
+                </div>
+
+              </div>
+              <!-- Card -->
+            </div>
+            <div class="swiper-slide">
+              <div class="card">
+
+                <!-- Card image -->
+                <img class="card-img-top" src="img/packages/1.png" alt="Card image cap">
+
+                <!-- Card content -->
+                <div class="card-body">
+                  <div class="row">
+                    <div class="col-8" style="border-right: 1px solid #666">
+                      <!-- Title -->
+                      <h5 class="card-title"><a>A Trip to Villa De Cosa 7 Days 6 Nights</a></h5>
+                      <!-- Text -->
+                      <br>
+                      <p class="card-text"> <i class="fa fa-location-arrow" aria-hidden="true"></i> Kauai, Hawaii.</p>
+                      <!-- Button -->
+                    </div>
+                    <div class="col-4 float-right">
+                      <p>7 Days</p>
+                      <span>
+                        <h5>$136</h5>person
+                      </span>
+                      <br>
+                      <span class="small"> <i class="fa fa-star p-1"
+                          style="background: yellow;color:#fff;border-radius:50%" aria-hidden="true"></i> 4.5 (14)
+                      </span>
+                    </div>
+                  </div>
+
+                </div>
+
+              </div>
+              <!-- Card -->
+            </div>
+            <div class="swiper-slide">
+              <div class="card">
+
+                <!-- Card image -->
+                <img class="card-img-top" src="img/packages/1.png" alt="Card image cap">
+
+                <!-- Card content -->
+                <div class="card-body">
+                  <div class="row">
+                    <div class="col-8" style="border-right: 1px solid #666">
+                      <!-- Title -->
+                      <h5 class="card-title"><a>A Trip to Villa De Cosa 7 Days 6 Nights</a></h5>
+                      <!-- Text -->
+                      <br>
+                      <p class="card-text"> <i class="fa fa-location-arrow" aria-hidden="true"></i> Kauai, Hawaii.</p>
+                      <!-- Button -->
+                    </div>
+                    <div class="col-4 float-right">
+                      <p>7 Days</p>
+                      <span>
+                        <h5>$136</h5>person
+                      </span>
+                      <br>
+                      <span class="small"> <i class="fa fa-star p-1"
+                          style="background: yellow;color:#fff;border-radius:50%" aria-hidden="true"></i> 4.5 (14)
+                      </span>
+                    </div>
+                  </div>
+
+                </div>
+
+              </div>
+              <!-- Card -->
+            </div>
+            <div class="swiper-slide">
+              <div class="card">
+
+                <!-- Card image -->
+                <img class="card-img-top" src="img/packages/1.png" alt="Card image cap">
+
+                <!-- Card content -->
+                <div class="card-body">
+                  <div class="row">
+                    <div class="col-8" style="border-right: 1px solid #666">
+                      <!-- Title -->
+                      <h5 class="card-title"><a>A Trip to Villa De Cosa 7 Days 6 Nights</a></h5>
+                      <!-- Text -->
+                      <br>
+                      <p class="card-text"> <i class="fa fa-location-arrow" aria-hidden="true"></i> Kauai, Hawaii.</p>
+                      <!-- Button -->
+                    </div>
+                    <div class="col-4 float-right">
+                      <p>7 Days</p>
+                      <span>
+                        <h5>$136</h5>person
+                      </span>
+                      <br>
+                      <span class="small"> <i class="fa fa-star p-1"
+                          style="background: yellow;color:#fff;border-radius:50%" aria-hidden="true"></i> 4.5 (14)
+                      </span>
+                    </div>
+                  </div>
+
+                </div>
+
+              </div>
+              <!-- Card -->
+            </div>
+            <div class="swiper-slide">
+              <div class="card">
+
+                <!-- Card image -->
+                <img class="card-img-top" src="img/packages/1.png" alt="Card image cap">
+
+                <!-- Card content -->
+                <div class="card-body">
+                  <div class="row">
+                    <div class="col-8" style="border-right: 1px solid #666">
+                      <!-- Title -->
+                      <h5 class="card-title"><a>A Trip to Villa De Cosa 7 Days 6 Nights</a></h5>
+                      <!-- Text -->
+                      <br>
+                      <p class="card-text"> <i class="fa fa-location-arrow" aria-hidden="true"></i> Kauai, Hawaii.</p>
+                      <!-- Button -->
+                    </div>
+                    <div class="col-4 float-right">
+                      <p>7 Days</p>
+                      <span>
+                        <h5>$136</h5>person
+                      </span>
+                      <br>
+                      <span class="small"> <i class="fa fa-star p-1"
+                          style="background: yellow;color:#fff;border-radius:50%" aria-hidden="true"></i> 4.5 (14)
+                      </span>
+                    </div>
+                  </div>
+
+                </div>
+
+              </div>
+              <!-- Card -->
+            </div>
+          </div>
+          <!-- Add Arrows -->
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+        </div>
+
+      </section>
+
+      <hr class="mb-5">
+    </div>
+    <!--Section: More-->
+    <section class="why-us mt-5 pt-5" style="background : #23b2e5;color: #fff">
+      <div class="container">
+        <!--Grid row-->
+        <div class="row">
+
+          <!--Grid column-->
+          <div class="col-md-6 mb-4 mt-5">
+            <h3 class="text-uppercase ">Why us</h3>
+            <span>We make all the process easy</span> <br><br>
+            <ul class="list-unstyled">
+
+              <li>
+                <div class="row">
+                  <i class="fas fa-globe fa-3x pt-3"></i>
+                  <div class="col-8 float-right">
+                    <h4>All Around the World Tours</h3>
+                      <p>Dummy text ever since the 1500s, when an unknown printer took. A galley of type and scrambled
+                        it to make a type specimen book</p>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="row">
+                  <i class="fas fa-parachute-box fa-3x pt-3"></i>
+                  <div class="col-8 float-right">
+                    <h4>Private & Customized Tours</h3>
+                      <p>Dummy text ever since the 1500s, when an unknown printer took. A galley of type and scrambled
+                        it to make a type specimen book</p>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="row">
+                  <i class="fas fa-passport fa-3x pt-3"></i>
+                  <div class="col-8 float-right">
+                    <h4>Immigration & Passport Help</h4>
+                    <p>Dummy text ever since the 1500s, when an unknown printer took. A galley of type and scrambled it
+                      to make a type specimen book</p>
+                  </div>
+                </div>
+              </li>
+
+
+            </ul>
+
+
+          </div>
+          <!--Grid column-->
+
+          <!--Grid column-->
+          <div class="col-md-6 mb-4">
+
+            <img src="img/01-Home2p-Recovered.png" class="d-block w-100" height="100%" alt="">
+
+
+          </div>
+          <!--Grid column-->
+
+        </div>
+        <!--Grid row-->
+      </div>
+
+    </section>
+    <section class="around-world mt-5">
+      <div class=" text-center">
+        <h2 class="text-center text-uppercase font-weight-bold">Around the World with us</h2>
+        <p>The World is not Enough. Travel around with us.</p>
+        <img src="img/vacation/Travel.png" class="d-block w-100" alt="">
+      </div>
+    </section>
+    <!--Section: More-->
+    <section class="vacation">
+      <div class="container text-center text-md-left">
+
+        <!-- Grid row -->
+        <div class="row pb-5" style="padding-top: 125px ;">
+
+          <!-- Grid column -->
+          <div class="col-md-3 mx-auto">
+
+            <!-- Links -->
+            <h5 class="font-weight-bold text-uppercase mt-5 mt-5 mb-4">Vacation Packages</h5>
+
+            <ul class=" mt-5 mt-5">
+              <li>
+                <a href="#!">Las Vegas Vacations</a>
+              </li>
+              <li>
+                <a href="#!">Orlando Vacations</a>
+              </li>
+              <li>
+                <a href="#!">New York Vacations</a>
+              </li>
+              <li>
+                <a href="#!">Miami Vacations</a>
+              </li>
+              <li>
+                <a href="#!">San Diego Vacations</a>
+              </li>
+              <li>
+                <a href="#!">San Francisco Vacations </a>
+              </li>
+              <li>
+                <a href="#!">Los Angeles Vacations</a>
+              </li>
+            </ul>
+
+          </div>
+          <!-- Grid column -->
+
+          <hr class="clearfix w-100 d-md-none">
+
+          <!-- Grid column -->
+          <div class="col-md-3 mx-auto">
+
+            <!-- Links -->
+            <h5 class="font-weight-bold text-uppercase mt-5 mt-3 mb-4">Vacation Packages</h5>
+
+            <ul class=" mt-5 ">
+              <li>
+                <a href="#!">Las Vegas Vacations</a>
+              </li>
+              <li>
+                <a href="#!">Orlando Vacations</a>
+              </li>
+              <li>
+                <a href="#!">New York Vacations</a>
+              </li>
+              <li>
+                <a href="#!">Miami Vacations</a>
+              </li>
+              <li>
+                <a href="#!">San Diego Vacations</a>
+              </li>
+              <li>
+                <a href="#!">San Francisco Vacations </a>
+              </li>
+              <li>
+                <a href="#!">Los Angeles Vacations</a>
+              </li>
+            </ul>
+
+          </div>
+          <!-- Grid column -->
+
+          <hr class="clearfix w-100 d-md-none">
+
+          <!-- Grid column -->
+          <div class="col-md-3 mx-auto">
+
+            <!-- Links -->
+            <h5 class="font-weight-bold text-uppercase mt-5 mt-3 mb-4">Vacation Packages</h5>
+
+            <ul class=" mt-5 ">
+              <li>
+                <a href="#!">Las Vegas Vacations</a>
+              </li>
+              <li>
+                <a href="#!">Orlando Vacations</a>
+              </li>
+              <li>
+                <a href="#!">New York Vacations</a>
+              </li>
+              <li>
+                <a href="#!">Miami Vacations</a>
+              </li>
+              <li>
+                <a href="#!">San Diego Vacations</a>
+              </li>
+              <li>
+                <a href="#!">San Francisco Vacations </a>
+              </li>
+              <li>
+                <a href="#!">Los Angeles Vacations</a>
+              </li>
+            </ul>
+
+          </div>
+          <div class="col-md-3 mx-auto">
+
+            <!-- Links -->
+            <h5 class="font-weight-bold text-uppercase mt-5 mb-4">Trusted By</h5>
+
+            <ul class="list-unstyled mt-5">
+              <li class="mb-4">
+                <img src="img/vacation/Logo 1.png" alt="" srcset="">
+              </li>
+              <li class="mb-4">
+                <img src="img/vacation/Logo 2.png" alt="" srcset="">
+              </li>
+              <li class="mb-4">
+                <img src="img/vacation/Logo 3.png" alt="" srcset="">
+              </li>
+            </ul>
+
+          </div>
+          <!-- Grid column -->
+          <ul class="navbar-nav mr-auto justify-content-center d-flex navdown col-md-6 float-left col-sm-12">
+            <li class="nav-item active">
+              <a class="nav-link text-uppercase" href="index.html">Home
+                <span class="sr-only">(current)</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-uppercase" href="packages.html">Packages</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-uppercase" href="locations.html">Locations </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-uppercase" href="payment.html">PAYMENT</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-uppercase" href="guide.html">GUIDE</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-uppercase" href="faq.html">faq</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-uppercase" href="contact.html">Contact</a>
+            </li>
+          </ul>
+          <div class="col-md-6 col-sm-12 float-right navdown " style="direction: rtl;">
+            <div class="row pb-4">
+              <a href="#">
+                <i class="fab fa-facebook-f mr-3"></i>
+              </a>
+
+              <a href="#">
+                <i class="fab fa-twitter mr-3"></i>
+              </a>
+
+              <a href="#">
+                <i class="fab fa-youtube mr-3"></i>
+              </a>
+
+              <a href="#">
+                <i class="fab fa-google-plus-g mr-3"></i>
+              </a>
+
+              <a href="#">
+                <i class="fab fa-dribbble mr-3"></i>
+              </a>
+
+              <a href="#">
+                <i class="fab fa-pinterest mr-3"></i>
+              </a>
+
+              <a href="#">
+                <i class="fab fa-github mr-3"></i>
+              </a>
+
+              <a href="#">
+                <i class="fab fa-codepen mr-3"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- Grid row -->
+
+      </div>
+
+    </section>
+
+
+  </main>
+  <!--Main layout-->
+
+  <!--Footer-->
+  <footer class=" text-center font-small wow fadeIn container">
+    <!-- Footer Links -->
+
+    <!-- Social icons -->
+    <div class="row">
+      <div class="col-md-6 mb-4">
+
+        <form class="input-group">
+          <!-- <p>Subscribe to Newsletter</p> -->
+          <label for="#subsc" class="font-weight-bold">Subscribe to Newsletter</label>
+          <br>
+          <input type="text" class="form-control form-control-sm d-block" id="subsc" placeholder="Email"
+            style="width: 80% ">
+          <div class="input-group-append">
+            <button class="btn btn-sm btn-outline-blue  my-0 " type="button">Send</button>
+          </div>
+        </form>
+
+      </div>
+      <div class="col-md-6 mb-4 float-right">
+        <div class="row">
+          <div class="col-6">
+
+            <i class="fa fa-phone fa-2x" aria-hidden="true"></i>
+            <span>
+              +201221501020 / +201221501020
+            </span>
+
+          </div>
+          <div class="col-6">
+            <i class="fas fa-map-marked fa-2x pr-3"></i>
+            <span>El-Agamy – Hanovel Alexandria - Egypt</span>
+          </div>
+        </div>
+        <i class="fa fa-envelope fa-2x pr-3" aria-hidden="true"></i>
+        <span>info@elahlamtravel.com</span>
+
+      </div>
+    </div>
+
+
+
+  </footer>
+  <!--Copyright-->
+  <div class="footer-copyright">
+    <p class="text-center m-auto pt-5 mb-5 font-weight-bold ">Copyright © 2019 elahlamtravel.com All rights reserved
+      Designed & Developed by: 2winDesign.com</p>
+  </div>
+  <!--/.Copyright-->
+  <div class=" loader-page" role="status">
+    <div class="trinity-rings-spinner">
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+    </div>
+  </div>
+  <!--/.Footer-->
+
+  <!-- SCRIPTS -->
+  <!-- JQuery -->
+  <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+  <!-- Bootstrap tooltips -->
+  <script type="text/javascript" src="js/popper.min.js"></script>
+  <!-- Swiper Carsoul -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.min.js"></script>
+  <!-- Bootstrap core JavaScript -->
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <!-- MDB core JavaScript -->
+  <script type="text/javascript" src="js/mdb.min.js"></script>
+  <!-- Initializations -->
+  <script type="text/javascript">
+    // Animations initialization
+    new WOW().init();
+  </script>
+  <!-- Initialize Swiper -->
+  <script src="js/main.js"></script>
+</body>
+
+</html>

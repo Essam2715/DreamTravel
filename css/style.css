@@ -1,0 +1,265 @@
+/* Required height of parents of the Full Page Carousel for proper displaying carousel itself */
+@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
+
+html,
+body,
+.view {
+  height: 100%;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500
+}
+
+html,
+body {
+  position: relative;
+  height: 100%;
+}
+
+:root {
+  --color: #003a6c
+}
+
+html,
+body,
+header,
+.view {
+  height: 100%;
+}
+
+/* Carousel*/
+.carousel,
+.carousel-item,
+.carousel-item.active {
+  height: 100%;
+}
+
+.carousel-inner {
+  height: 100%;
+}
+
+@media (min-width: 800px) and (max-width: 850px) {
+  .navbar:not(.top-nav-collapse) {
+    background: #1C2331 !important;
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--color) ;
+  font-style: italic
+}
+h3::after,
+h1::after {
+  content: '';
+  height: 2px;
+  width: 50px;
+  margin-bottom: 8px;
+  margin-left: 12px;
+  background: yellow;
+  display: inline-block;
+}
+
+/* Full Page Carousel itself*/
+
+.carousel {
+  height: 100%;
+}
+
+.carousel .carousel-inner {
+  height: 100%;
+}
+
+.carousel .carousel-inner .carousel-item,
+.carousel .carousel-inner .active {
+  height: 100%;
+}
+
+/* Navbar animation */
+.navbar {
+  background-color: #0f4479;
+  padding: 0
+}
+
+.top-nav-collapse {
+  background-color: #0f4479;
+}
+.navbar.scrolling-navbar {
+  padding: 0
+}
+.nav-link:hover {
+  color: blue
+}
+
+.right-side {
+  background: #fff;
+  width: 45vw;
+  margin: 0;
+  margin-left: 296px;
+  padding: 14px 10px;
+  border-left: 5px solid #019fe9;
+}
+.right-side a{
+  color: black
+}
+
+strong.overlay {
+  background: rgba(0, 0, 0, .2);
+  width: 100vw;
+  padding: 45px;
+}
+.search-box {
+  width: 40vw
+}
+/* Adding color to the Navbar on mobile */
+@media only screen and (max-width: 768px) {
+  .navbar {
+    background-color: #0f4479;
+  }
+  .right-side {
+    width: 100vw;
+    margin: 0;
+    margin-left: 0; 
+ 
+  }
+  .headerimg{
+    margin-top: 40px;
+      height: 22vh;
+      width:100%
+  }
+
+  .search-box {
+    width: 100vw
+  }
+}
+
+/* Footer color for sake of consistency with Navbar */
+.page-footer {
+  background-color: #0f4479;
+}
+
+/* Locations */
+.swiper-container {
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+  width: 300px;
+  height: 300px;
+}
+
+/* packges */
+.packges{
+  position: relative;
+}
+.packges .swiper-container {
+  width: 100%;
+  height: 100vh;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.packges .swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  height: 200px;
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+.packges2{
+  display: none;
+}
+@media (max-width:768px){
+  .packges{
+    display: none
+  }
+  .packges2{
+    display: block;
+  }
+  .packges2 .swiper-container {
+    width: 100%;
+    height: 100%;
+  }
+  .packges2 .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+  }
+}
+/* vacation */
+.vacation {
+  background-image: url('../img/Logo 1.png');
+  background-repeat: no-repeat
+}
+.navdown {
+  padding-top: 103px;
+  flex-direction: row
+}
+.navdown li{
+  margin: 5px 10px;
+  justify-content: space-around;
+  color: #fff
+}
+.navdown ul li a.nav-link{
+  color: #fff;
+}
+.navdown a i {
+  text-align: center;
+  margin: auto;
+  height: 30px ;
+  width: 30px;
+  background: #003a6c;
+  color: #fff;
+  padding-top: 8px;
+}
+@media (max-width:768px){
+  .vacation{
+    background-image: none
+  }
+  .navdown{
+    padding: 0;
+    flex-direction: column;
+
+  }
+}
+/* footer  */
+
+
+.footer-copyright{
+  background-image: url('../img/footer/Layer 768.png');
+  background-repeat: no-repeat;
+  height: 20vh;
+  width: 100%;
+  display: inline-grid;
+}
