@@ -1,21 +1,53 @@
-    var swiper = new Swiper('.locations .swiper-container', {
-      effect: 'coverflow',
-      loop: true,
-      grabCursor: true,
-      centeredSlides: true,
-      slidesPerView: 'auto',
-      coverflowEffect: {
-        rotate: 50,
-        stretch: 0,
-        depth: 100,
-        modifier: 1,
-        slideShadows : true,
-      },
+
+
+if (window.matchMedia( "(max-width: 768px)" ).matches) {
+
+  var swiper = new Swiper('.swiper-container', {
+    slidesPerView: 1,
+    spaceBetween: 0,
+    freeMode: true,
+    loop:true,
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+  });} else if (window.matchMedia( "(max-width: 1000px)" ).matches){
+    var swiper = new Swiper('.swiper-container', {
+      slidesPerView: 2,
+      spaceBetween: 0,
+      freeMode: true,
+      loop:true,
       pagination: {
         el: '.swiper-pagination',
+        clickable: true,
       },
-      
-    });
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    })
+  }
+else {
+    
+var swiper = new Swiper('.swiper-container', {
+  slidesPerView: 4,
+  spaceBetween: 0,
+  freeMode: true,
+  loop:true,
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+  },
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+});
+}
 
     var swiper = new Swiper('.packges .swiper-container', {
       slidesPerView: 3,
@@ -32,6 +64,10 @@
       navigation: {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
+      },
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
       },
     });
 
