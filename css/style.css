@@ -295,10 +295,15 @@ strong.overlay {
 .packges {
   position: relative;
 }
+.packges .small,
+.packges2 .small{
+  margin-top: 23px;
+}
 .packges .card .card-body h5 {
   font-weight: 700;
 }
-.packges .text-price {
+.packges .text-price,
+.packges2 .text-price {
   color: #1ba1e1;
   font-size: 20px;
   font-weight: 800;
