@@ -2,11 +2,11 @@
 
 if (window.matchMedia( "(max-width: 768px)" ).matches) {
 
-  var swiper = new Swiper('.swiper-container', {
+  var swiper = new Swiper('.swiperatneen', {
     slidesPerView: 1,
     spaceBetween: 0,
     freeMode: true,
-    loop:true,
+    // loop:true,
     pagination: {
       el: '.swiper-pagination',
       clickable: true,
@@ -16,11 +16,11 @@ if (window.matchMedia( "(max-width: 768px)" ).matches) {
       prevEl: '.swiper-button-prev',
     },
   });} else if (window.matchMedia( "(max-width: 1000px)" ).matches){
-    var swiper = new Swiper('.swiper-container', {
+    var swiper = new Swiper('.swiperatneen', {
       slidesPerView: 2,
       spaceBetween: 0,
       freeMode: true,
-      loop:true,
+      // loop:true,
       pagination: {
         el: '.swiper-pagination',
         clickable: true,
@@ -33,11 +33,11 @@ if (window.matchMedia( "(max-width: 768px)" ).matches) {
   }
 else {
     
-var swiper = new Swiper('.swiper-container', {
+var swiper = new Swiper('.swiperatneen', {
   slidesPerView: 4,
   spaceBetween: 0,
   freeMode: true,
-  loop:true,
+  // loop:true,
   pagination: {
     el: '.swiper-pagination',
     clickable: true,

@@ -37,10 +37,22 @@ header,
   height: 100%;
 }
 
+.brands {
+  background-image: url('../img/Logo.png');
+  height: 49px;
+  width: 129px;
+  background-repeat: no-repeat;
+}
+
+.margin {
+  margin-left: 200px;
+}
+
 @media (min-width: 800px) and (max-width: 850px) {
   .navbar:not(.top-nav-collapse) {
     background: #1c2331 !important;
   }
+
 }
 
 h1,
@@ -101,13 +113,26 @@ h1::after {
   background: #fff;
   width: 45vw;
   margin: 0;
-  margin-left: 296px;
-  padding: 14px 10px;
+  margin-left: 25px;
+  padding: 7px 11px;
   border-left: 5px solid #019fe9;
 }
 
 .right-side a {
   color: black;
+}
+
+.call-icon {
+  background: #019fe9;
+  color: #fff;
+  padding: 5px;
+  font-size: -1ox;
+  border-radius: 50%;
+  margin-left: -30px;
+  line-height: 1;
+  /* margin-top: -14px; */
+  position: absolute;
+  top: 19px;
 }
 
 strong.overlay {
@@ -116,8 +141,33 @@ strong.overlay {
   padding: 45px;
 }
 
-.search-box {
-  width: 40vw;
+
+.hr2 {
+  height: 1px;
+  background: yellow;
+  width: 455px;
+}
+#input_container {
+  position:relative;
+  padding:0 0 0 20px;
+  margin:0 auto;
+  width:40vw;
+}
+#input {
+  height:20px;
+  margin:0;
+  padding-right: 30px;
+  width: 100%;
+  height: 40px;
+  outline:none
+}
+#input_img {
+  position:absolute;
+  bottom: 4px;
+  right: 12px;
+  width: 32px;
+  height: 32px;
+  cursor: pointer;
 }
 
 /* Adding color to the Navbar on mobile */
@@ -125,7 +175,9 @@ strong.overlay {
   .navbar {
     background-color: #0f4479;
   }
-
+.hr2{
+  width: auto;
+}
   .right-side {
     width: 100vw;
     margin: 0;
@@ -138,8 +190,12 @@ strong.overlay {
     width: 100%;
   }
 
-  .search-box {
+  #input_container {
     width: 100vw;
+  }
+
+  .margin {
+    margin-left: 0px;
   }
 }
 
@@ -204,7 +260,17 @@ strong.overlay {
   -webkit-align-items: center;
   align-items: center;
 }
-
+.locations .swiper-button-next, .locations  .swiper-button-prev {
+  left: 20%;
+  margin-top: 140px;
+}
+.locations  .swiper-button-prev {
+  margin-left: -37px;
+}
+.swiperatneen {
+  padding-bottom: 4px;
+  border-bottom: 15px solid #154b79
+}
 @media (max-width:678px) {
   .locations .wid20pr {
     width: 90vw;
@@ -215,9 +281,13 @@ strong.overlay {
     width: 100%;
   }
 
-   .row {
+  .row {
     margin-right: 0;
     margin-left: 0;
+  }
+  .locations .swiper-button-next, .locations  .swiper-button-prev {
+    left: 20%;
+    margin-top: -25px;
   }
 }
 
@@ -225,7 +295,14 @@ strong.overlay {
 .packges {
   position: relative;
 }
-
+.packges .card .card-body h5 {
+  font-weight: 700;
+}
+.packges .text-price {
+  color: #1ba1e1;
+  font-size: 20px;
+  font-weight: 800;
+}
 .packges .swiper-container {
   width: 100%;
   height: 100vh;
@@ -292,6 +369,42 @@ strong.overlay {
 }
 
 /* vacation */
+.around-world .ball{
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  background: #003a6c;
+  border: 4px solid #DDD;
+  margin: 30px auto;
+}
+.around-world .ball3{
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  background: #019fe9 !important;
+  border: 4px solid #DDD;
+  margin: 30px auto;
+
+}
+.around-world .bold55{
+  font-weight: 700;
+  font-size: 23px
+}
+.around-world a.bold55{
+  color: #003a6c
+}
+.around-world p.bold55{
+  color: #6b6b6b;
+  font-weight: bolder;
+}
 .vacation {
   background-image: url("../img/Logo 1.png");
   background-repeat: no-repeat;
@@ -308,8 +421,8 @@ strong.overlay {
   color: #fff;
 }
 
-.navdown ul li a.nav-link {
-  color: #fff;
+.whitext {
+  color: #fff !important;
 }
 
 .navdown a i {
@@ -340,8 +453,12 @@ strong.overlay {
   .sponsser li {
     padding: 10px;
   }
-  .navdown a i{
+
+  .navdown a i {
     margin-right: 13px;
+  }
+  .whitext {
+    color: #003a6c !important
   }
 }
 
@@ -359,4 +476,16 @@ strong.overlay {
 .swiper-pagination-custom,
 .swiper-pagination-fraction {
   background: #fff
+}
+
+footer button[type=submit]{
+  background: transparent;
+  border: 0;
+  border-left: 1px solid #ccc;
+  margin-left: -87px;
+  z-index: 2;
+  padding-left: 21px;
+}
+textarea:focus, input:focus {
+  outline: 0;
 }

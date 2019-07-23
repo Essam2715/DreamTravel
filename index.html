@@ -127,14 +127,34 @@
 </head>
 
 <body>
+  <nav class="navbar navbar-dark elegant-color-dark">
+    <div class="container">
+      <div>
+        <div class="white-text d-inline-block" style="border-right: 1px solid #ccc"> <i class="fa fa-envelope pr-2 pl-3"
+            aria-hidden="true"></i>info@elahlamtravel.com </div>
+        <div class="white-text d-inline-block">
+          <i class="fas fa-location-arrow pt-3  pb-3 pl-3"></i> Alex Address | UK adress
+        </div>
+      </div>
+      <div>
+        <!-- Basic dropdown -->
+        <button class="btn elegant-color-dark white-text dropdown-toggle " type="button" data-toggle="dropdown"
+          aria-haspopup="true" aria-expanded="false"> <img src="img/icon/us Icon.png" alt=""> EN </button>
+
+        <div class="dropdown-menu bg-dark" style="left: auto">
+          <a href="#" class="white-text pl-3"> <img src="img/icon/eg icon.png" alt=""> AR </a>
+        </div>
+      </div>
+    </div>
+  </nav>
 
   <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg fixed-top navbar-dark scrolling-navbar">
+  <nav class="navbar navbar-expand-lg navbar-dark scrolling-navbar">
     <div class="container">
 
       <!-- Brand -->
       <a class="navbar-brand" href="index.html">
-        <strong class=" text-uppercase">elahlam</strong>
+        <div class="brands"></div>
       </a>
 
       <!-- Collapse -->
@@ -147,7 +167,7 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
 
         <!-- Left -->
-        <ul class="navbar-nav mr-auto justify-content-center">
+        <ul class="navbar-nav mr-auto justify-content-center margin">
           <li class="nav-item active">
             <a class="nav-link text-uppercase" href="index.html">Home
               <span class="sr-only">(current)</span>
@@ -177,14 +197,13 @@
         <ul class="navbar-nav nav-flex-icons right-side">
           <li class="nav-item">
             <h4>
-              <i class="fa fa-phone-square fa-lg" aria-hidden="true"></i>
-              +2 01221501020
+              <i class="fa fa-phone call-icon" aria-hidden="true"></i>
+              &ensp; +201221501020
             </h4>
-          </li>
-          <li class="nav-item">
-            <p>
-              &MediumSpace; 24/7 Available
-            </p>
+
+            <span>
+              &ensp; 24/7 Available
+            </span>
           </li>
         </ul>
 
@@ -218,16 +237,18 @@
 
             <!-- Content -->
             <div class="text-center white-text mx-5 wow fadeIn">
-              <h1 class="mb-4">
+              <span class="mb-4">
                 <strong class="overlay text-uppercase text-white display-4 d-block">
-                  ElAhlam Travel
-                </strong>
-              </h1>
+                  ElAhlamTravel
 
-              <div>
-                <input class="form-control form-control-lg search-box m-auto d-inline-block" type="text"
-                  placeholder="Enter your destination">
-                <i class="fas fa-search" aria-hidden="true"></i>
+                  <hr class="hr2">
+                </strong>
+              </span>
+
+              <div id="input_container">
+                <input type="text" id="input" class="form-control form-control-lg " placeholder="Enter your destination"
+                  value>
+                <img src="img/icon/search.png" id="input_img">
               </div>
 
 
@@ -249,23 +270,25 @@
           <!-- Mask & flexbox options-->
           <div class="mask rgba-black-light d-flex justify-content-center align-items-center">
 
-            <!-- Content -->
-            <div class="text-center white-text mx-5 wow fadeIn ">
-              <h1 class="mb-4">
-                <strong class="overlay text-uppercase text-white display-4 d-block ">
-                  ElAhlam Travel
-                </strong>
-              </h1>
-
-              <div>
-                <input class="form-control form-control-lg search-box m-auto d-inline-block" type="text"
-                  placeholder="Enter your destination">
-                <i class="fas fa-search" aria-hidden="true"></i>
+              <!-- Content -->
+              <div class="text-center white-text mx-5 wow fadeIn">
+                <span class="mb-4">
+                  <strong class="overlay text-uppercase text-white display-4 d-block">
+                    ElAhlamTravel
+  
+                    <hr class="hr2">
+                  </strong>
+                </span>
+  
+                <div id="input_container">
+                  <input type="text" id="input" class="form-control form-control-lg " placeholder="Enter your destination"
+                    value>
+                  <img src="img/icon/search.png" id="input_img">
+                </div>
+  
+  
               </div>
-
-
-            </div>
-            <!-- Content -->
+              <!-- Content -->
 
           </div>
           <!-- Mask & flexbox options-->
@@ -281,23 +304,26 @@
 
           <!-- Mask & flexbox options-->
           <div class="mask rgba-black-light d-flex justify-content-center align-items-center">
-            <!-- Content -->
-            <div class="text-center white-text mx-5 wow fadeIn">
-              <h1 class="mb-4">
-                <strong class="overlay text-uppercase text-white display-4 d-block">
-                  ElAhlam Travel
-                </strong>
-              </h1>
 
-              <div>
-                <input class="form-control form-control-lg search-box m-auto d-inline-block" type="text"
-                  placeholder="Enter your destination">
-                <i class="fas fa-search" aria-hidden="true"></i>
+              <!-- Content -->
+              <div class="text-center white-text mx-5 wow fadeIn">
+                <span class="mb-4">
+                  <strong class="overlay text-uppercase text-white display-4 d-block">
+                    ElAhlamTravel
+  
+                    <hr class="hr2">
+                  </strong>
+                </span>
+  
+                <div id="input_container">
+                  <input type="text" id="input" class="form-control form-control-lg " placeholder="Enter your destination"
+                    value>
+                  <img src="img/icon/search.png" id="input_img">
+                </div>
+  
+  
               </div>
-
-
-            </div>
-            <!-- Content -->
+              <!-- Content -->
 
           </div>
           <!-- Mask & flexbox options-->
@@ -326,146 +352,147 @@
   <!--Main layout-->
   <main>
     <section class="locations">
-      <div class="row">
-        <div class="pl-5 pt-5 d-block text-center wid20pr">
-          <h3 class="pb-5">Browse Locations</h3>
-          <img src="img/locations/Map Icon.png" alt="" srcset="">
-        </div>
+      <div class="swiper-container">
+        <div class="row">
+          <div class="pl-5 pt-5 d-block text-center wid20pr">
+            <h3 class="pb-5">Browse Locations</h3>
+            <img src="img/locations/Map Icon.png" alt="" srcset="">
+          </div>
           <!-- Swiper -->
-          <div class="swiper-container" style="width: 75%">
+          <div class="swiper-container swiperatneen" style="width: 75%">
+
             <div class="swiper-wrapper">
               <div class="swiper-slide">
-                  <div class="view overlay zoom">
-                      <p class="head-img">Bukhara, Uzbekistan</p>
-                      <img
-                        src="img/locations/Hero-Uzbekistan-Locals-visit-Shahi-Zinda-Photo-credit-iStock-Ozbalci-2-1920x1080.png"
-                        class="img-fluid " alt="zoom">
-                      <div class="mask flex-center waves-effect waves-light rgba-teal-strong">
-                        <button class="btn btn-light text-primary">View Destinations +</button>
-                      </div>
-                    </div>
+                <div class="view overlay zoom">
+                  <p class="head-img">Bukhara, Uzbekistan</p>
+                  <img
+                    src="img/locations/Hero-Uzbekistan-Locals-visit-Shahi-Zinda-Photo-credit-iStock-Ozbalci-2-1920x1080.png"
+                    class="img-fluid " alt="zoom">
+                  <div class="mask flex-center waves-effect waves-light rgba-teal-strong">
+                    <button class="btn btn-light text-primary">View Destinations +</button>
+                  </div>
+                </div>
               </div>
               <div class="swiper-slide">
-                  <div class="view overlay zoom">
-                      <p class="head-img">Šolta, Croatia</p>
-                      <img src="img/locations/Ocean_near_Maslinica_on_Solta_in_Croatia.png" class="img-fluid "
-                        alt="zoom">
-                      <div class="mask flex-center waves-effect waves-light rgba-teal-strong">
-                        <button class="btn btn-light text-primary">View Destinations +</button>
-                      </div>
-                    </div>
+                <div class="view overlay zoom">
+                  <p class="head-img">Šolta, Croatia</p>
+                  <img src="img/locations/Ocean_near_Maslinica_on_Solta_in_Croatia.png" class="img-fluid " alt="zoom">
+                  <div class="mask flex-center waves-effect waves-light rgba-teal-strong">
+                    <button class="btn btn-light text-primary">View Destinations +</button>
+                  </div>
+                </div>
               </div>
               <div class="swiper-slide">
-                  <div class="view overlay zoom">
-                      <p class="head-img">Carribean, Grenada</p>
-                      <img src="img/locations/article-2479124-1909F1B700000578-520_634x519.png" class="img-fluid "
-                        alt="zoom">
-                      <div class="mask flex-center waves-effect waves-light rgba-teal-strong">
-                        <button class="btn btn-light text-primary">View Destinations +</button>
-                      </div>
-                    </div>
+                <div class="view overlay zoom">
+                  <p class="head-img">Carribean, Grenada</p>
+                  <img src="img/locations/article-2479124-1909F1B700000578-520_634x519.png" class="img-fluid "
+                    alt="zoom">
+                  <div class="mask flex-center waves-effect waves-light rgba-teal-strong">
+                    <button class="btn btn-light text-primary">View Destinations +</button>
+                  </div>
+                </div>
               </div>
               <div class="swiper-slide">
-                  <div class="view overlay zoom">
-                      <p class="head-img">Los Cabos, Mexico </p>
-                      <img src="img/locations/Gradient Hover.png" class="img-fluid " alt="zoom">
-                      <div class="mask flex-center waves-effect waves-light rgba-teal-strong">
-                        <button class="btn btn-light text-primary">View Destinations +</button>
-                      </div>
-                    </div>
+                <div class="view overlay zoom">
+                  <p class="head-img">Los Cabos, Mexico </p>
+                  <img src="img/locations/Gradient Hover.png" class="img-fluid " alt="zoom">
+                  <div class="mask flex-center waves-effect waves-light rgba-teal-strong">
+                    <button class="btn btn-light text-primary">View Destinations +</button>
+                  </div>
+                </div>
               </div>
               <div class="swiper-slide">
-                  <div class="view overlay zoom">
-                      <p class="head-img">Bukhara, Uzbekistan</p>
-                      <img
-                        src="img/locations/Hero-Uzbekistan-Locals-visit-Shahi-Zinda-Photo-credit-iStock-Ozbalci-2-1920x1080.png"
-                        class="img-fluid " alt="zoom">
-                      <div class="mask flex-center waves-effect waves-light rgba-teal-strong">
-                        <button class="btn btn-light text-primary">View Destinations +</button>
-                      </div>
-                    </div>
+                <div class="view overlay zoom">
+                  <p class="head-img">Bukhara, Uzbekistan</p>
+                  <img
+                    src="img/locations/Hero-Uzbekistan-Locals-visit-Shahi-Zinda-Photo-credit-iStock-Ozbalci-2-1920x1080.png"
+                    class="img-fluid " alt="zoom">
+                  <div class="mask flex-center waves-effect waves-light rgba-teal-strong">
+                    <button class="btn btn-light text-primary">View Destinations +</button>
+                  </div>
+                </div>
               </div>
               <div class="swiper-slide">
-                  <div class="view overlay zoom">
-                      <p class="head-img">Šolta, Croatia</p>
-                      <img src="img/locations/Ocean_near_Maslinica_on_Solta_in_Croatia.png" class="img-fluid "
-                        alt="zoom">
-                      <div class="mask flex-center waves-effect waves-light rgba-teal-strong">
-                        <button class="btn btn-light text-primary">View Destinations +</button>
-                      </div>
-                    </div>
+                <div class="view overlay zoom">
+                  <p class="head-img">Šolta, Croatia</p>
+                  <img src="img/locations/Ocean_near_Maslinica_on_Solta_in_Croatia.png" class="img-fluid " alt="zoom">
+                  <div class="mask flex-center waves-effect waves-light rgba-teal-strong">
+                    <button class="btn btn-light text-primary">View Destinations +</button>
+                  </div>
+                </div>
               </div>
               <div class="swiper-slide">
-                  <div class="view overlay zoom">
-                      <p class="head-img">Carribean, Grenada</p>
-                      <img src="img/locations/article-2479124-1909F1B700000578-520_634x519.png" class="img-fluid "
-                        alt="zoom">
-                      <div class="mask flex-center waves-effect waves-light rgba-teal-strong">
-                        <button class="btn btn-light text-primary">View Destinations +</button>
-                      </div>
-                    </div>
+                <div class="view overlay zoom">
+                  <p class="head-img">Carribean, Grenada</p>
+                  <img src="img/locations/article-2479124-1909F1B700000578-520_634x519.png" class="img-fluid "
+                    alt="zoom">
+                  <div class="mask flex-center waves-effect waves-light rgba-teal-strong">
+                    <button class="btn btn-light text-primary">View Destinations +</button>
+                  </div>
+                </div>
               </div>
               <div class="swiper-slide">
-                  <div class="view overlay zoom">
-                      <p class="head-img">Los Cabos, Mexico </p>
-                      <img src="img/locations/Gradient Hover.png" class="img-fluid " alt="zoom">
-                      <div class="mask flex-center waves-effect waves-light rgba-teal-strong">
-                        <button class="btn btn-light text-primary">View Destinations +</button>
-                      </div>
-                    </div>
+                <div class="view overlay zoom">
+                  <p class="head-img">Los Cabos, Mexico </p>
+                  <img src="img/locations/Gradient Hover.png" class="img-fluid " alt="zoom">
+                  <div class="mask flex-center waves-effect waves-light rgba-teal-strong">
+                    <button class="btn btn-light text-primary">View Destinations +</button>
+                  </div>
+                </div>
               </div>
               <div class="swiper-slide">
-                  <div class="view overlay zoom">
-                      <p class="head-img">Bukhara, Uzbekistan</p>
-                      <img
-                        src="img/locations/Hero-Uzbekistan-Locals-visit-Shahi-Zinda-Photo-credit-iStock-Ozbalci-2-1920x1080.png"
-                        class="img-fluid " alt="zoom">
-                      <div class="mask flex-center waves-effect waves-light rgba-teal-strong">
-                        <button class="btn btn-light text-primary">View Destinations +</button>
-                      </div>
-                    </div>
+                <div class="view overlay zoom">
+                  <p class="head-img">Bukhara, Uzbekistan</p>
+                  <img
+                    src="img/locations/Hero-Uzbekistan-Locals-visit-Shahi-Zinda-Photo-credit-iStock-Ozbalci-2-1920x1080.png"
+                    class="img-fluid " alt="zoom">
+                  <div class="mask flex-center waves-effect waves-light rgba-teal-strong">
+                    <button class="btn btn-light text-primary">View Destinations +</button>
+                  </div>
+                </div>
               </div>
               <div class="swiper-slide">
-                  <div class="view overlay zoom">
-                      <p class="head-img">Šolta, Croatia</p>
-                      <img src="img/locations/Ocean_near_Maslinica_on_Solta_in_Croatia.png" class="img-fluid "
-                        alt="zoom">
-                      <div class="mask flex-center waves-effect waves-light rgba-teal-strong">
-                        <button class="btn btn-light text-primary">View Destinations +</button>
-                      </div>
-                    </div>
+                <div class="view overlay zoom">
+                  <p class="head-img">Šolta, Croatia</p>
+                  <img src="img/locations/Ocean_near_Maslinica_on_Solta_in_Croatia.png" class="img-fluid " alt="zoom">
+                  <div class="mask flex-center waves-effect waves-light rgba-teal-strong">
+                    <button class="btn btn-light text-primary">View Destinations +</button>
+                  </div>
+                </div>
               </div>
               <div class="swiper-slide">
-                  <div class="view overlay zoom">
-                      <p class="head-img">Carribean, Grenada</p>
-                      <img src="img/locations/article-2479124-1909F1B700000578-520_634x519.png" class="img-fluid "
-                        alt="zoom">
-                      <div class="mask flex-center waves-effect waves-light rgba-teal-strong">
-                        <button class="btn btn-light text-primary">View Destinations +</button>
-                      </div>
-                    </div>
+                <div class="view overlay zoom">
+                  <p class="head-img">Carribean, Grenada</p>
+                  <img src="img/locations/article-2479124-1909F1B700000578-520_634x519.png" class="img-fluid "
+                    alt="zoom">
+                  <div class="mask flex-center waves-effect waves-light rgba-teal-strong">
+                    <button class="btn btn-light text-primary">View Destinations +</button>
+                  </div>
+                </div>
               </div>
               <div class="swiper-slide">
-                  <div class="view overlay zoom">
-                      <p class="head-img">Los Cabos, Mexico </p>
-                      <img src="img/locations/Gradient Hover.png" class="img-fluid " alt="zoom">
-                      <div class="mask flex-center waves-effect waves-light rgba-teal-strong">
-                        <button class="btn btn-light text-primary">View Destinations +</button>
-                      </div>
-                    </div>
+                <div class="view overlay zoom">
+                  <p class="head-img">Los Cabos, Mexico </p>
+                  <img src="img/locations/Gradient Hover.png" class="img-fluid " alt="zoom">
+                  <div class="mask flex-center waves-effect waves-light rgba-teal-strong">
+                    <button class="btn btn-light text-primary">View Destinations +</button>
+                  </div>
+                </div>
               </div>
 
-              
+
             </div>
-            
+
             <!-- Add Pagination -->
             <div class="swiper-pagination"></div>
             <!-- Add Arrows -->
-            <div class="swiper-button-next"></div>
-            <div class="swiper-button-prev"></div>
 
-          <!-- Swiper JS -->
+
+            <!-- Swiper JS -->
+          </div>
         </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
       </div>
     </section>
     <div class="container">
@@ -544,23 +571,23 @@
               <!-- Card content -->
               <div class="card-body">
                 <div class="row">
-                  <div class="col-8" style="border-right: 1px solid #666">
+                  <div class="col-7" style="border-right: 1px solid #666">
                     <!-- Title -->
                     <h5 class="card-title"><a>A Trip to Villa De Cosa 7 Days 6 Nights</a></h5>
                     <!-- Text -->
                     <br>
-                    <p class="card-text"> <i class="fa fa-location-arrow" aria-hidden="true"></i> Kauai, Hawaii.</p>
+                    <p class="card-text"> <i class="fa fa-location-arrow" aria-hidden="true"></i> Sydney, Australia</p>
                     <!-- Button -->
                   </div>
-                  <div class="col-4 float-right">
+                  <div class="col-5 float-right">
                     <p>7 Days</p>
                     <span>
-                      <h5>$136</h5>person
+                      $<span class="text-price">136</span>/person
                     </span>
                     <br>
-                    <span class="small"> <i class="fa fa-star p-1"
-                        style="background: yellow;color:#fff;border-radius:50%" aria-hidden="true"></i> 4.5 (14)
-                    </span>
+                    <p class="small"> <i class="fa fa-star p-1" style="background: yellow;color:#fff;border-radius:50%"
+                        aria-hidden="true"></i> 4.5 (14)
+                    </p>
                   </div>
                 </div>
 
@@ -578,7 +605,7 @@
               <!-- Card content -->
               <div class="card-body">
                 <div class="row">
-                  <div class="col-8" style="border-right: 1px solid #666">
+                  <div class="col-7" style="border-right: 1px solid #666">
                     <!-- Title -->
                     <h5 class="card-title"><a>A Trip to Villa De Cosa 7 Days 6 Nights</a></h5>
                     <!-- Text -->
@@ -586,10 +613,10 @@
                     <p class="card-text"> <i class="fa fa-location-arrow" aria-hidden="true"></i> Kauai, Hawaii.</p>
                     <!-- Button -->
                   </div>
-                  <div class="col-4 float-right">
+                  <div class="col-5 float-right">
                     <p>7 Days</p>
                     <span>
-                      <h5>$136</h5>person
+                      $<span class="text-price">136</span>/person
                     </span>
                     <br>
                     <span class="small"> <i class="fa fa-star p-1"
@@ -612,23 +639,25 @@
               <!-- Card content -->
               <div class="card-body">
                 <div class="row">
-                  <div class="col-8" style="border-right: 1px solid #666">
+                  <div class="col-7" style="border-right: 1px solid #666">
                     <!-- Title -->
-                    <h5 class="card-title"><a>A Trip to Villa De Cosa 7 Days 6 Nights</a></h5>
+                    <h5 class="card-title"><a>Port Blair, 5 Nights with Flights </a></h5>
                     <!-- Text -->
                     <br>
-                    <p class="card-text"> <i class="fa fa-location-arrow" aria-hidden="true"></i> Kauai, Hawaii.</p>
+                    <p class="card-text"> <i class="fa fa-location-arrow" aria-hidden="true"></i>Phant , Vitenam
+
+                    </p>
                     <!-- Button -->
                   </div>
-                  <div class="col-4 float-right">
+                  <div class="col-5 float-right">
                     <p>7 Days</p>
                     <span>
-                      <h5>$136</h5>person
+                      $<span class="text-price">136</span>/person
                     </span>
                     <br>
-                    <span class="small"> <i class="fa fa-star p-1"
-                        style="background: yellow;color:#fff;border-radius:50%" aria-hidden="true"></i> 4.5 (14)
-                    </span>
+                    <p class="small"> <i class="fa fa-star p-1" style="background: yellow;color:#fff;border-radius:50%"
+                        aria-hidden="true"></i> 4.5 (14)
+                    </p>
                   </div>
                 </div>
 
@@ -646,23 +675,23 @@
               <!-- Card content -->
               <div class="card-body">
                 <div class="row">
-                  <div class="col-8" style="border-right: 1px solid #666">
+                  <div class="col-7" style="border-right: 1px solid #666">
                     <!-- Title -->
                     <h5 class="card-title"><a>A Trip to Villa De Cosa 7 Days 6 Nights</a></h5>
                     <!-- Text -->
                     <br>
-                    <p class="card-text"> <i class="fa fa-location-arrow" aria-hidden="true"></i> Kauai, Hawaii.</p>
+                    <p class="card-text"> <i class="fa fa-location-arrow" aria-hidden="true"></i> Sydney, Australia</p>
                     <!-- Button -->
                   </div>
-                  <div class="col-4 float-right">
+                  <div class="col-5 float-right">
                     <p>7 Days</p>
                     <span>
-                      <h5>$136</h5>person
+                      $<span class="text-price">136</span>/person
                     </span>
                     <br>
-                    <span class="small"> <i class="fa fa-star p-1"
-                        style="background: yellow;color:#fff;border-radius:50%" aria-hidden="true"></i> 4.5 (14)
-                    </span>
+                    <p class="small"> <i class="fa fa-star p-1" style="background: yellow;color:#fff;border-radius:50%"
+                        aria-hidden="true"></i> 4.5 (14)
+                    </p>
                   </div>
                 </div>
 
@@ -680,7 +709,7 @@
               <!-- Card content -->
               <div class="card-body">
                 <div class="row">
-                  <div class="col-8" style="border-right: 1px solid #666">
+                  <div class="col-7" style="border-right: 1px solid #666">
                     <!-- Title -->
                     <h5 class="card-title"><a>A Trip to Villa De Cosa 7 Days 6 Nights</a></h5>
                     <!-- Text -->
@@ -688,10 +717,10 @@
                     <p class="card-text"> <i class="fa fa-location-arrow" aria-hidden="true"></i> Kauai, Hawaii.</p>
                     <!-- Button -->
                   </div>
-                  <div class="col-4 float-right">
+                  <div class="col-5 float-right">
                     <p>7 Days</p>
                     <span>
-                      <h5>$136</h5>person
+                      $<span class="text-price">136</span>/person
                     </span>
                     <br>
                     <span class="small"> <i class="fa fa-star p-1"
@@ -714,23 +743,25 @@
               <!-- Card content -->
               <div class="card-body">
                 <div class="row">
-                  <div class="col-8" style="border-right: 1px solid #666">
+                  <div class="col-7" style="border-right: 1px solid #666">
                     <!-- Title -->
-                    <h5 class="card-title"><a>A Trip to Villa De Cosa 7 Days 6 Nights</a></h5>
+                    <h5 class="card-title"><a>Port Blair, 5 Nights with Flights </a></h5>
                     <!-- Text -->
                     <br>
-                    <p class="card-text"> <i class="fa fa-location-arrow" aria-hidden="true"></i> Kauai, Hawaii.</p>
+                    <p class="card-text"> <i class="fa fa-location-arrow" aria-hidden="true"></i>Phant , Vitenam
+
+                    </p>
                     <!-- Button -->
                   </div>
-                  <div class="col-4 float-right">
+                  <div class="col-5 float-right">
                     <p>7 Days</p>
                     <span>
-                      <h5>$136</h5>person
+                      $<span class="text-price">136</span>/person
                     </span>
                     <br>
-                    <span class="small"> <i class="fa fa-star p-1"
-                        style="background: yellow;color:#fff;border-radius:50%" aria-hidden="true"></i> 4.5 (14)
-                    </span>
+                    <p class="small"> <i class="fa fa-star p-1" style="background: yellow;color:#fff;border-radius:50%"
+                        aria-hidden="true"></i> 4.5 (14)
+                    </p>
                   </div>
                 </div>
 
@@ -755,23 +786,24 @@
                 <!-- Card content -->
                 <div class="card-body">
                   <div class="row">
-                    <div class="col-8" style="border-right: 1px solid #666">
+                    <div class="col-7" style="border-right: 1px solid #666">
                       <!-- Title -->
                       <h5 class="card-title"><a>A Trip to Villa De Cosa 7 Days 6 Nights</a></h5>
                       <!-- Text -->
                       <br>
-                      <p class="card-text"> <i class="fa fa-location-arrow" aria-hidden="true"></i> Kauai, Hawaii.</p>
+                      <p class="card-text"> <i class="fa fa-location-arrow" aria-hidden="true"></i> Sydney, Australia
+                      </p>
                       <!-- Button -->
                     </div>
-                    <div class="col-4 float-right">
+                    <div class="col-5 float-right">
                       <p>7 Days</p>
                       <span>
-                        <h5>$136</h5>person
+                        $<span class="text-price">136</span>/person
                       </span>
                       <br>
-                      <span class="small"> <i class="fa fa-star p-1"
+                      <p class="small"> <i class="fa fa-star p-1"
                           style="background: yellow;color:#fff;border-radius:50%" aria-hidden="true"></i> 4.5 (14)
-                      </span>
+                      </p>
                     </div>
                   </div>
 
@@ -789,7 +821,7 @@
                 <!-- Card content -->
                 <div class="card-body">
                   <div class="row">
-                    <div class="col-8" style="border-right: 1px solid #666">
+                    <div class="col-7" style="border-right: 1px solid #666">
                       <!-- Title -->
                       <h5 class="card-title"><a>A Trip to Villa De Cosa 7 Days 6 Nights</a></h5>
                       <!-- Text -->
@@ -797,15 +829,15 @@
                       <p class="card-text"> <i class="fa fa-location-arrow" aria-hidden="true"></i> Kauai, Hawaii.</p>
                       <!-- Button -->
                     </div>
-                    <div class="col-4 float-right">
+                    <div class="col-5 float-right">
                       <p>7 Days</p>
                       <span>
-                        <h5>$136</h5>person
+                        $<span class="text-price">136</span>/person
                       </span>
                       <br>
-                      <span class="small"> <i class="fa fa-star p-1"
+                      <p class="small"> <i class="fa fa-star p-1"
                           style="background: yellow;color:#fff;border-radius:50%" aria-hidden="true"></i> 4.5 (14)
-                      </span>
+                      </p>
                     </div>
                   </div>
 
@@ -823,23 +855,25 @@
                 <!-- Card content -->
                 <div class="card-body">
                   <div class="row">
-                    <div class="col-8" style="border-right: 1px solid #666">
+                    <div class="col-7" style="border-right: 1px solid #666">
                       <!-- Title -->
-                      <h5 class="card-title"><a>A Trip to Villa De Cosa 7 Days 6 Nights</a></h5>
+                      <h6 5lass="card-title"><a>Port Blair, H Nights with Flights </a></h6>5
                       <!-- Text -->
                       <br>
-                      <p class="card-text"> <i class="fa fa-location-arrow" aria-hidden="true"></i> Kauai, Hawaii.</p>
+                      <p class="card-text"> <i class="fa fa-location-arrow" aria-hidden="true"></i>Phant , Vitenam
+
+                      </p>
                       <!-- Button -->
                     </div>
-                    <div class="col-4 float-right">
+                    <div class="col-5 float-right">
                       <p>7 Days</p>
                       <span>
-                        <h5>$136</h5>person
+                        $<span class="text-price">136</span>/person
                       </span>
                       <br>
-                      <span class="small"> <i class="fa fa-star p-1"
+                      <p class="small"> <i class="fa fa-star p-1"
                           style="background: yellow;color:#fff;border-radius:50%" aria-hidden="true"></i> 4.5 (14)
-                      </span>
+                      </p>
                     </div>
                   </div>
 
@@ -857,23 +891,24 @@
                 <!-- Card content -->
                 <div class="card-body">
                   <div class="row">
-                    <div class="col-8" style="border-right: 1px solid #666">
+                    <div class="col-7" style="border-right: 1px solid #666">
                       <!-- Title -->
                       <h5 class="card-title"><a>A Trip to Villa De Cosa 7 Days 6 Nights</a></h5>
                       <!-- Text -->
                       <br>
-                      <p class="card-text"> <i class="fa fa-location-arrow" aria-hidden="true"></i> Kauai, Hawaii.</p>
+                      <p class="card-text"> <i class="fa fa-location-arrow" aria-hidden="true"></i> Sydney, Australia
+                      </p>
                       <!-- Button -->
                     </div>
-                    <div class="col-4 float-right">
+                    <div class="col-5 float-right">
                       <p>7 Days</p>
                       <span>
-                        <h5>$136</h5>person
+                        $<span class="text-price">136</span>/person
                       </span>
                       <br>
-                      <span class="small"> <i class="fa fa-star p-1"
+                      <p class="small"> <i class="fa fa-star p-1"
                           style="background: yellow;color:#fff;border-radius:50%" aria-hidden="true"></i> 4.5 (14)
-                      </span>
+                      </p>
                     </div>
                   </div>
 
@@ -891,7 +926,7 @@
                 <!-- Card content -->
                 <div class="card-body">
                   <div class="row">
-                    <div class="col-8" style="border-right: 1px solid #666">
+                    <div class="col-7" style="border-right: 1px solid #666">
                       <!-- Title -->
                       <h5 class="card-title"><a>A Trip to Villa De Cosa 7 Days 6 Nights</a></h5>
                       <!-- Text -->
@@ -899,15 +934,15 @@
                       <p class="card-text"> <i class="fa fa-location-arrow" aria-hidden="true"></i> Kauai, Hawaii.</p>
                       <!-- Button -->
                     </div>
-                    <div class="col-4 float-right">
+                    <div class="col-5 float-right">
                       <p>7 Days</p>
                       <span>
-                        <h5>$136</h5>person
+                        $<span class="text-price">136</span>/person
                       </span>
                       <br>
-                      <span class="small"> <i class="fa fa-star p-1"
+                      <p class="small"> <i class="fa fa-star p-1"
                           style="background: yellow;color:#fff;border-radius:50%" aria-hidden="true"></i> 4.5 (14)
-                      </span>
+                      </p>
                     </div>
                   </div>
 
@@ -925,23 +960,25 @@
                 <!-- Card content -->
                 <div class="card-body">
                   <div class="row">
-                    <div class="col-8" style="border-right: 1px solid #666">
+                    <div class="col-7" style="border-right: 1px solid #666">
                       <!-- Title -->
-                      <h5 class="card-title"><a>A Trip to Villa De Cosa 7 Days 6 Nights</a></h5>
+                      <h6 5lass="card-title"><a>Port Blair, H Nights with Flights </a></h6>5
                       <!-- Text -->
                       <br>
-                      <p class="card-text"> <i class="fa fa-location-arrow" aria-hidden="true"></i> Kauai, Hawaii.</p>
+                      <p class="card-text"> <i class="fa fa-location-arrow" aria-hidden="true"></i>Phant , Vitenam
+
+                      </p>
                       <!-- Button -->
                     </div>
-                    <div class="col-4 float-right">
+                    <div class="col-5 float-right">
                       <p>7 Days</p>
                       <span>
-                        <h5>$136</h5>person
+                        $<span class="text-price">136</span>/person
                       </span>
                       <br>
-                      <span class="small"> <i class="fa fa-star p-1"
+                      <p class="small"> <i class="fa fa-star p-1"
                           style="background: yellow;color:#fff;border-radius:50%" aria-hidden="true"></i> 4.5 (14)
-                      </span>
+                      </p>
                     </div>
                   </div>
 
@@ -959,23 +996,24 @@
                 <!-- Card content -->
                 <div class="card-body">
                   <div class="row">
-                    <div class="col-8" style="border-right: 1px solid #666">
+                    <div class="col-7" style="border-right: 1px solid #666">
                       <!-- Title -->
                       <h5 class="card-title"><a>A Trip to Villa De Cosa 7 Days 6 Nights</a></h5>
                       <!-- Text -->
                       <br>
-                      <p class="card-text"> <i class="fa fa-location-arrow" aria-hidden="true"></i> Kauai, Hawaii.</p>
+                      <p class="card-text"> <i class="fa fa-location-arrow" aria-hidden="true"></i> Sydney, Australia
+                      </p>
                       <!-- Button -->
                     </div>
-                    <div class="col-4 float-right">
+                    <div class="col-5 float-right">
                       <p>7 Days</p>
                       <span>
-                        <h5>$136</h5>person
+                        $<span class="text-price">136</span>/person
                       </span>
                       <br>
-                      <span class="small"> <i class="fa fa-star p-1"
+                      <p class="small"> <i class="fa fa-star p-1"
                           style="background: yellow;color:#fff;border-radius:50%" aria-hidden="true"></i> 4.5 (14)
-                      </span>
+                      </p>
                     </div>
                   </div>
 
@@ -993,7 +1031,7 @@
                 <!-- Card content -->
                 <div class="card-body">
                   <div class="row">
-                    <div class="col-8" style="border-right: 1px solid #666">
+                    <div class="col-7" style="border-right: 1px solid #666">
                       <!-- Title -->
                       <h5 class="card-title"><a>A Trip to Villa De Cosa 7 Days 6 Nights</a></h5>
                       <!-- Text -->
@@ -1001,15 +1039,15 @@
                       <p class="card-text"> <i class="fa fa-location-arrow" aria-hidden="true"></i> Kauai, Hawaii.</p>
                       <!-- Button -->
                     </div>
-                    <div class="col-4 float-right">
+                    <div class="col-5 float-right">
                       <p>7 Days</p>
                       <span>
-                        <h5>$136</h5>person
+                        $<span class="text-price">136</span>/person
                       </span>
                       <br>
-                      <span class="small"> <i class="fa fa-star p-1"
+                      <p class="small"> <i class="fa fa-star p-1"
                           style="background: yellow;color:#fff;border-radius:50%" aria-hidden="true"></i> 4.5 (14)
-                      </span>
+                      </p>
                     </div>
                   </div>
 
@@ -1027,23 +1065,25 @@
                 <!-- Card content -->
                 <div class="card-body">
                   <div class="row">
-                    <div class="col-8" style="border-right: 1px solid #666">
+                    <div class="col-7" style="border-right: 1px solid #666">
                       <!-- Title -->
-                      <h5 class="card-title"><a>A Trip to Villa De Cosa 7 Days 6 Nights</a></h5>
+                      <h6 5lass="card-title"><a>Port Blair, H Nights with Flights </a></h6>5
                       <!-- Text -->
                       <br>
-                      <p class="card-text"> <i class="fa fa-location-arrow" aria-hidden="true"></i> Kauai, Hawaii.</p>
+                      <p class="card-text"> <i class="fa fa-location-arrow" aria-hidden="true"></i>Phant , Vitenam
+
+                      </p>
                       <!-- Button -->
                     </div>
-                    <div class="col-4 float-right">
+                    <div class="col-5 float-right">
                       <p>7 Days</p>
                       <span>
-                        <h5>$136</h5>person
+                        $<span class="text-price">136</span>/person
                       </span>
                       <br>
-                      <span class="small"> <i class="fa fa-star p-1"
+                      <p class="small"> <i class="fa fa-star p-1"
                           style="background: yellow;color:#fff;border-radius:50%" aria-hidden="true"></i> 4.5 (14)
-                      </span>
+                      </p>
                     </div>
                   </div>
 
@@ -1061,23 +1101,24 @@
                 <!-- Card content -->
                 <div class="card-body">
                   <div class="row">
-                    <div class="col-8" style="border-right: 1px solid #666">
+                    <div class="c7l-8" style="border-right: 1px solid #666">
                       <!-- Title -->
                       <h5 class="card-title"><a>A Trip to Villa De Cosa 7 Days 6 Nights</a></h5>
                       <!-- Text -->
                       <br>
-                      <p class="card-text"> <i class="fa fa-location-arrow" aria-hidden="true"></i> Kauai, Hawaii.</p>
+                      <p class="card-text"> <i class="fa fa-location-arrow" aria-hidden="true"></i> Sydney, Australia
+                      </p>
                       <!-- Button -->
                     </div>
-                    <div class="col-4 float-right">
+                    <div class="col-5 float-right">
                       <p>7 Days</p>
                       <span>
-                        <h5>$136</h5>person
+                        $<span class="text-price">136</span>/person
                       </span>
                       <br>
-                      <span class="small"> <i class="fa fa-star p-1"
+                      <p class="small"> <i class="fa fa-star p-1"
                           style="background: yellow;color:#fff;border-radius:50%" aria-hidden="true"></i> 4.5 (14)
-                      </span>
+                      </p>
                     </div>
                   </div>
 
@@ -1111,27 +1152,27 @@
               <li>
                 <div class="row">
                   <i class="fas fa-globe fa-3x pt-3"></i>
-                  <div class="col-8 float-right">
-                    <h4>All Around the World Tours</h3>
-                      <p>Dummy text ever since the 1500s, when an unknown printer took. A galley of type and scrambled
-                        it to make a type specimen book</p>
+                  <div class="col-md-8 col-sm-12 float-right">
+                    <h4>All Around the World Tours</h4>
+                    <p>Dummy text ever since the 1500s, when an unknown printer took. A galley of type and scrambled
+                      it to make a type specimen book</p>
                   </div>
                 </div>
               </li>
               <li>
                 <div class="row">
                   <i class="fas fa-parachute-box fa-3x pt-3"></i>
-                  <div class="col-8 float-right">
-                    <h4>Private & Customized Tours</h3>
-                      <p>Dummy text ever since the 1500s, when an unknown printer took. A galley of type and scrambled
-                        it to make a type specimen book</p>
+                  <div class="col-md-8 col-sm-12 float-right">
+                    <h4>Private & Customized Tours</h4>
+                    <p>Dummy text ever since the 1500s, when an unknown printer took. A galley of type and scrambled
+                      it to make a type specimen book</p>
                   </div>
                 </div>
               </li>
               <li>
                 <div class="row">
                   <i class="fas fa-passport fa-3x pt-3"></i>
-                  <div class="col-8 float-right">
+                  <div class="col-md-8 col-sm-12 float-right">
                     <h4>Immigration & Passport Help</h4>
                     <p>Dummy text ever since the 1500s, when an unknown printer took. A galley of type and scrambled it
                       to make a type specimen book</p>
@@ -1160,11 +1201,54 @@
       </div>
 
     </section>
+
     <section class="around-world mt-5">
-      <div class=" text-center">
-        <h2 class="text-center text-uppercase font-weight-bold">Around the World with us</h2>
+      <div class=" text-center mb-5">
+        <h2 class="text-center text-uppercase font-weight-bold ">Around the World with us</h2>
         <p>The World is not Enough. Travel around with us.</p>
-        <img src="img/vacation/Travel.png" class="d-block w-100" alt="">
+        <!-- <img src="img/vacation/Travel.png" class="d-block w-100" alt=""> -->
+      </div>
+
+      <div class="sss">
+        <div class="row">
+          <div class="col-md-2 col-xs-12 text-center">
+            <img src="img/icon/Africa.png" alt="Africa">
+            <p class="ball"></p>
+            <a href="#!" class="text-uppercase bold55">Africa</a>
+            <p class="text-uppercase bold55"> 1505 Locations</p>
+          </div>
+          <div class="col-md-2 col-xs-12 text-center">
+            <img src="img/icon/Asia.png" alt="Asia">
+            <p class="ball"></p>
+            <a href="#!" class="text-uppercase bold55">Asia</a>
+            <p class="text-uppercase bold55"> 7535 Locations</p>
+          </div>
+          <div class="col-md-2 col-xs-12 text-center">
+            <img src="img/icon/North America.png" alt="North America">
+            <p class="ball3"></p>
+            <a href="#!" class="text-uppercase bold55">North America</a>
+            <p class="text-uppercase bold55"> 3335 Locations</p>
+          </div>
+          <div class="col-md-2 col-xs-12 text-center">
+            <img src="img/icon/Australia.png" alt="Australia">
+            <p class="ball"></p>
+            <a href="#!" class="text-uppercase bold55">Australia</a>
+            <p class="text-uppercase bold55"> 1973 Locations</p>
+          </div>
+          <div class="col-md-2 col-xs-12 text-center">
+            <img src="img/icon/Europe.png" alt="Europe">
+            <p class="ball"></p>
+            <a href="#!" class="text-uppercase bold55">Europe</a>
+            <p class="text-uppercase bold55"> 3633 Locations</p>
+          </div>
+          <div class="col-md-2 col-xs-12 text-center">
+            <img src="img/icon/South America.png" alt="South America">
+            <div class="ball"></div>
+            <a href="#!" class="text-uppercase bold55">South America</a>
+            <p class="text-uppercase bold55"> 1117 Locations</p>
+          </div>
+        </div>
+
       </div>
     </section>
     <!--Section: More-->
@@ -1296,27 +1380,25 @@
           <!-- Grid column -->
           <ul class="navbar-nav mr-auto justify-content-center d-flex  navdown col-md-6 float-left col-sm-12">
             <li class="nav-item active">
-              <a class="nav-link text-uppercase" href="index.html">Home
-                <span class="sr-only">(current)</span>
-              </a>
+              <a class="nav-link text-uppercase  whitext" href="index.html">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-uppercase" href="packages.html">Packages</a>
+              <a class="nav-link text-uppercase whitext" href="packages.html">Packages</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-uppercase" href="locations.html">Locations </a>
+              <a class="nav-link text-uppercase whitext" href="locations.html">Locations </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-uppercase" href="payment.html">PAYMENT</a>
+              <a class="nav-link text-uppercase whitext" href="payment.html">PAYMENT</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-uppercase" href="guide.html">GUIDE</a>
+              <a class="nav-link text-uppercase whitext" href="guide.html">GUIDE</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-uppercase" href="faq.html">faq</a>
+              <a class="nav-link text-uppercase whitext" href="faq.html">faq</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-uppercase" href="contact.html">Contact</a>
+              <a class="nav-link text-uppercase whitext" href="contact.html">Contact</a>
             </li>
           </ul>
           <div class="col-md-6 col-xs-12 float-right navdown " style="direction: rtl;">
@@ -1371,37 +1453,44 @@
 
     <!-- Social icons -->
     <div class="row">
-      <div class="col-md-6 mb-4">
+      <div class="col-md-6 col-xs-12 mb-4">
 
-        <form class="input-group">
-          <!-- <p>Subscribe to Newsletter</p> -->
-          <label for="#subsc" class="font-weight-bold">Subscribe to Newsletter</label>
-          <br>
-          <input type="text" class="form-control form-control-sm d-block" id="subsc" placeholder="Email"
-            style="width:70%">
-          <div class="input-group-append">
-            <button class="btn btn-sm btn-outline-blue  my-0 " type="button">Send</button>
-          </div>
-        </form>
+        <div class="col-md-8 col-xs-12">
+          <form class="input-group">
+            <!-- <p>Subscribe to Newsletter</p> -->
+            <label for="#subsc" class="font-weight-bold w-100">Subscribe to Newsletter</label>
+            <br>
+            <input type="text" class="form-control form-control-sm d-block" id="subsc" placeholder="Email"
+              style="padding:25px">
+            <div class="input-group-append">
+              <button type="submit">Send</button>
+            </div>
+          </form>
+        </div>
 
       </div>
       <div class="col-md-6 mb-4 float-right">
         <div class="row">
-          <div class="col-6">
+          <div class="col-md-4 col-xs-12">
+            <div class="media">
+              <i class="fa fa-phone fa-2x pt-1" aria-hidden="true"></i>
+              <div class="media-body">
 
-            <i class="fa fa-phone fa-2x" aria-hidden="true"></i>
-            <span>
-              +201221501020 / +201221501020
-            </span>
-
+                <span>+201221501020</span>
+                <br>
+                <span>+201221501020</span>
+              </div>
+            </div>
           </div>
-          <div class="col-6">
+          <div class="col-md-8 col-xs-12">
             <i class="fas fa-map-marked fa-2x pr-3"></i>
             <span>El-Agamy – Hanovel Alexandria - Egypt</span>
           </div>
         </div>
-        <i class="fa fa-envelope fa-2x pr-3" aria-hidden="true"></i>
-        <span>info@elahlamtravel.com</span>
+        <div class="col-md-6 col-xs-12 float-left mt-4  text-justify">
+          <i class="fa fa-envelope fa-2x pr-3" aria-hidden="true"></i>
+          <span>info@elahlamtravel.com</span>
+        </div>
 
       </div>
     </div>
