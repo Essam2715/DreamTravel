@@ -127,19 +127,18 @@
 </head>
 
 <body>
-  <nav class="navbar navbar-dark elegant-color-dark">
+  <nav class="navbar navbar-dark elegant-color-dark p-0">
     <div class="container">
       <div>
-        <div class="white-text d-inline-block" style="border-right: 1px solid #ccc"> <i class="fa fa-envelope pr-2 pl-3"
-            aria-hidden="true"></i>info@elahlamtravel.com </div>
-        <div class="white-text d-inline-block">
-          <i class="fas fa-map-marker-alt
- pt-3  pb-3 pl-3"></i> Alex Address | UK adress
+        <div class="d-inline-block topnav-info" style="border-right: 1px solid #ccc"> <i
+            class="fa fa-envelope pr-2 pl-3" aria-hidden="true"></i>info@elahlamtravel.com </div>
+        <div class="d-inline-block topnav-info">
+          <i class="fas fa-map-marker-alt pb-3 pl-3"></i> Alex Address | UK adress
         </div>
       </div>
       <div>
         <!-- Basic dropdown -->
-        <button class="btn elegant-color-dark white-text dropdown-toggle " type="button" data-toggle="dropdown"
+        <button class="btn elegant-color-dark white-text dropdown-toggle m-0" type="button" data-toggle="dropdown"
           aria-haspopup="true" aria-expanded="false"> <img src="img/icon/us Icon.png" alt=""> EN </button>
 
         <div class="dropdown-menu bg-dark" style="left: auto">
@@ -150,56 +149,50 @@
   </nav>
 
   <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-dark scrolling-navbar">
+  <nav class="navbar navbar-expand-lg navbar-dark second-nav">
     <div class="container">
-
       <!-- Brand -->
       <a class="navbar-brand" href="index.html">
         <div class="brands"></div>
       </a>
 
       <!-- Collapse -->
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#basicExampleNav"
+        aria-controls="basicExampleNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-
-      <!-- Links -->
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-
+      <div class="collapse navbar-collapse" id="basicExampleNav">
+        <!-- Links -->
         <!-- Left -->
-        <ul class="navbar-nav mr-auto justify-content-center margin">
-          <li class="nav-item active">
+        <ul class="navbar-nav  text-center ">
+          <li class="nav-item active m-auto">
             <a class="nav-link text-uppercase" href="index.html">Home
               <span class="sr-only">(current)</span>
             </a>
           </li>
-          <li class="nav-item">
+          <li class="nav-item m-auto">
             <a class="nav-link text-uppercase" href="packages.html">Packages</a>
           </li>
-          <li class="nav-item">
+          <li class="nav-item m-auto">
             <a class="nav-link text-uppercase" href="locations.html">Locations </a>
           </li>
-          <li class="nav-item">
+          <li class="nav-item m-auto">
             <a class="nav-link text-uppercase" href="payment.html">PAYMENT</a>
           </li>
-          <li class="nav-item">
+          <li class="nav-item m-auto">
             <a class="nav-link text-uppercase" href="guide.html">GUIDE</a>
           </li>
-          <li class="nav-item">
+          <li class="nav-item m-auto">
             <a class="nav-link text-uppercase" href="faq.html">faq</a>
           </li>
-          <li class="nav-item">
+          <li class="nav-item m-auto">
             <a class="nav-link text-uppercase" href="contact.html">Contact</a>
           </li>
-        </ul>
-
-        <!-- Right -->
-        <ul class="navbar-nav nav-flex-icons right-side">
-          <li class="nav-item">
+          <li class="nav-item  right-side">
             <h4>
-              <i class="fa fa-phone call-icon" aria-hidden="true"></i>
-              &ensp; +201221501020
+              <img src="img/icon/phoneCall.png" alt="">
+              &ensp; +20 122 150 1020
             </h4>
 
             <span>
@@ -209,7 +202,6 @@
         </ul>
 
       </div>
-
     </div>
   </nav>
   <!-- Navbar -->
@@ -239,7 +231,7 @@
             <!-- Content -->
             <div class="text-center white-text mx-5 wow fadeIn">
               <span class="mb-4">
-                <strong class="overlay text-uppercase text-white display-4 d-block">
+                <strong class="overlay text-uppercase text-white display-41 d-block">
                   ElAhlamTravel
 
                   <hr class="hr2">
@@ -274,7 +266,7 @@
             <!-- Content -->
             <div class="text-center white-text mx-5 wow fadeIn">
               <span class="mb-4">
-                <strong class="overlay text-uppercase text-white display-4 d-block">
+                <strong class="overlay text-uppercase text-white display-41 d-block">
                   ElAhlamTravel
 
                   <hr class="hr2">
@@ -309,7 +301,7 @@
             <!-- Content -->
             <div class="text-center white-text mx-5 wow fadeIn">
               <span class="mb-4">
-                <strong class="overlay text-uppercase text-white display-4 d-block">
+                <strong class="overlay text-uppercase text-white display-41 d-block">
                   ElAhlamTravel
 
                   <hr class="hr2">
@@ -352,12 +344,16 @@
 
   <!--Main layout-->
   <main>
-    <section class="locations">
+    <section class="locations wow jackInTheBox">
       <div class="swiper-container">
         <div class="row">
           <div class="pl-5 pt-5 d-block text-center wid20pr">
-            <h3 class="pb-5">Browse Locations</h3>
-            <img src="img/locations/Map Icon.png" alt="" srcset="">
+            <h4 class="pb-5 pt-4" style="font-size: 24pt;
+                                        font-weight: 600;
+                                        letter-spacing: 4px;
+                                        font-style: normal;">
+              Browse <br> Locations</h3>
+              <img src="img/locations/Map Icon.png" alt="" srcset="">
           </div>
           <!-- Swiper -->
           <div class="swiper-container swiperatneen" style="width: 75%">
@@ -499,15 +495,15 @@
     <div class="container">
 
       <!--Section: Main info-->
-      <section class="mt-5 wow fadeIn content">
+      <section class="mt-5 wow bounceInLeft content">
 
         <!--Grid row-->
         <div class="row">
 
           <!--Grid column-->
           <div class="col-md-7 mb-4">
-            <h3 class="font-weight-bold">Why Vacation With ElAhlamTravel?</h3>
-            <i>Better Travel Packages</i> <br><br>
+            <h5 class="font-weight-bold">Why Vacation With ElAhlamTravel?</h5>
+            <i> <span class="Better">Better</span> Travel Packages</i> <br><br>
             <p>
               Whether you're a seasoned traveler looking to check another destination off your list or someone trying to
               make that once-in-a-lifetime vacation happen, ElAhlamTravel can help you get there. For more than 50
@@ -544,7 +540,7 @@
             <!-- Main heading -->
 
             <!-- CTA -->
-            <a href="#" class="btn btn-outline-blue">Check Travel Packages </a>
+            <a href="#" class="btn ">Check Travel Packages </a>
 
 
           </div>
@@ -559,8 +555,8 @@
       <hr class="my-5">
 
       <!--Section: Main features & Quick Start-->
-      <section class="packges">
-        <h2 class="text-uppercase font-weight-bold font-italic mb-5">OUR Popular Packages</h2>
+      <section class="packges wow flipInX">
+        <h3 class="text-uppercase font-weight-bold font-italic mb-5">OUR Popular Packages</h3>
         <!-- Swiper -->
         <div class="row">
           <div class="col-md-4 mb-5">
@@ -577,18 +573,16 @@
                     <h5 class="card-title"><a>A Trip to Villa De Cosa 7 Days 6 Nights</a></h5>
                     <!-- Text -->
                     <br>
-                    <p class="card-text"> <i class="fa fa-map-marker-alt
-" aria-hidden="true"></i> Sydney, Australia</p>
+                    <p class="card-text"> <i class="fa fa-map-marker-alt" aria-hidden="true"></i> Sydney, Australia</p>
                     <!-- Button -->
                   </div>
                   <div class="col-5 float-right">
                     <p>7 Days</p>
-                    <span>
-                      $<span class="text-price">136</span>/person
+                    <span style="font-size: 11pt;">
+                      <span class="usd">$</span> <span class="text-price">136</span>/person
                     </span>
                     <br>
-                    <p class="small"> <i class="fa fa-star p-1" style="background: yellow;color:#fff;border-radius:50%"
-                        aria-hidden="true"></i> 4.5 (14)
+                    <p class="small"> <img src="img/icon/Star Icon.png" alt=""> <span style="color: #000;font-weight:700">4.5</span> (14)
                     </p>
                   </div>
                 </div>
@@ -612,20 +606,18 @@
                     <h5 class="card-title"><a>A Trip to Villa De Cosa 7 Days 6 Nights</a></h5>
                     <!-- Text -->
                     <br>
-                    <p class="card-text"> <i class="fa fa-map-marker-alt
-" aria-hidden="true"></i> Kauai, Hawaii.</p>
+                    <p class="card-text"> <i class="fa fa-map-marker-alt" aria-hidden="true"></i> Kauai, Hawaii.</p>
                     <!-- Button -->
                   </div>
                   <div class="col-5 float-right">
-                      <p>7 Days</p>
-                      <span>
-                        $<span class="text-price">136</span>/person
-                      </span>
-                      <br>
-                      <p class="small"> <i class="fa fa-star p-1"
-                          style="background: yellow;color:#fff;border-radius:50%" aria-hidden="true"></i> 4.5 (14)
-                      </p>
-                    </div>
+                    <p>7 Days</p>
+                    <span style="font-size: 11pt;">
+                      <span class="usd">$</span> <span class="text-price">136</span>/person
+                    </span>
+                    <br>
+                    <p class="small"> <img src="img/icon/Star Icon.png" alt=""> <span style="color: #000;font-weight:700">4.5</span> (14)
+                    </p>
+                  </div>
                 </div>
 
               </div>
@@ -647,20 +639,16 @@
                     <h5 class="card-title"><a>Port Blair, 5 Nights with Flights </a></h5>
                     <!-- Text -->
                     <br>
-                    <p class="card-text"> <i class="fa fa-map-marker-alt
-" aria-hidden="true"></i>Phant , Vitenam
-
-                    </p>
+                    <p class="card-text"> <i class="fa fa-map-marker-alt" aria-hidden="true"></i>Phant , Vitenam</p>
                     <!-- Button -->
                   </div>
                   <div class="col-5 float-right">
                     <p>7 Days</p>
-                    <span>
-                      $<span class="text-price">136</span>/person
+                    <span style="font-size: 11pt;">
+                      <span class="usd">$</span> <span class="text-price">136</span>/person
                     </span>
                     <br>
-                    <p class="small"> <i class="fa fa-star p-1" style="background: yellow;color:#fff;border-radius:50%"
-                        aria-hidden="true"></i> 4.5 (14)
+                    <p class="small"> <img src="img/icon/Star Icon.png" alt=""> <span style="color: #000;font-weight:700">4.5</span> (14)
                     </p>
                   </div>
                 </div>
@@ -684,18 +672,16 @@
                     <h5 class="card-title"><a>A Trip to Villa De Cosa 7 Days 6 Nights</a></h5>
                     <!-- Text -->
                     <br>
-                    <p class="card-text"> <i class="fa fa-map-marker-alt
-" aria-hidden="true"></i> Sydney, Australia</p>
+                    <p class="card-text"> <i class="fa fa-map-marker-alt" aria-hidden="true"></i> Sydney, Australia</p>
                     <!-- Button -->
                   </div>
                   <div class="col-5 float-right">
                     <p>7 Days</p>
-                    <span>
-                      $<span class="text-price">136</span>/person
+                    <span style="font-size: 11pt;">
+                      <span class="usd">$</span> <span class="text-price">136</span>/person
                     </span>
                     <br>
-                    <p class="small"> <i class="fa fa-star p-1" style="background: yellow;color:#fff;border-radius:50%"
-                        aria-hidden="true"></i> 4.5 (14)
+                    <p class="small"> <img src="img/icon/Star Icon.png" alt=""> <span style="color: #000;font-weight:700">4.5</span> (14)
                     </p>
                   </div>
                 </div>
@@ -719,20 +705,18 @@
                     <h5 class="card-title"><a>A Trip to Villa De Cosa 7 Days 6 Nights</a></h5>
                     <!-- Text -->
                     <br>
-                    <p class="card-text"> <i class="fa fa-map-marker-alt
-" aria-hidden="true"></i> Kauai, Hawaii.</p>
+                    <p class="card-text"> <i class="fa fa-map-marker-alt" aria-hidden="true"></i> Kauai, Hawaii.</p>
                     <!-- Button -->
                   </div>
                   <div class="col-5 float-right">
-                      <p>7 Days</p>
-                      <span>
-                        $<span class="text-price">136</span>/person
-                      </span>
-                      <br>
-                      <p class="small"> <i class="fa fa-star p-1"
-                          style="background: yellow;color:#fff;border-radius:50%" aria-hidden="true"></i> 4.5 (14)
-                      </p>
-                    </div>
+                    <p>7 Days</p>
+                    <span style="font-size: 11pt;">
+                      <span class="usd">$</span> <span class="text-price">136</span>/person
+                    </span>
+                    <br>
+                    <p class="small"> <img src="img/icon/Star Icon.png" alt=""> <span style="color: #000;font-weight:700">4.5</span> (14)
+                    </p>
+                  </div>
                 </div>
 
               </div>
@@ -754,20 +738,18 @@
                     <h5 class="card-title"><a>Port Blair, 5 Nights with Flights </a></h5>
                     <!-- Text -->
                     <br>
-                    <p class="card-text"> <i class="fa fa-map-marker-alt
-" aria-hidden="true"></i>Phant , Vitenam
+                    <p class="card-text"> <i class="fa fa-map-marker-alt" aria-hidden="true"></i>Phant , Vitenam
 
                     </p>
                     <!-- Button -->
                   </div>
                   <div class="col-5 float-right">
                     <p>7 Days</p>
-                    <span>
-                      $<span class="text-price">136</span>/person
+                    <span style="font-size: 11pt;">
+                      <span class="usd">$</span> <span class="text-price">136</span>/person
                     </span>
                     <br>
-                    <p class="small"> <i class="fa fa-star p-1" style="background: yellow;color:#fff;border-radius:50%"
-                        aria-hidden="true"></i> 4.5 (14)
+                    <p class="small"> <img src="img/icon/Star Icon.png" alt=""> <span style="color: #000;font-weight:700">4.5</span> (14)
                     </p>
                   </div>
                 </div>
@@ -781,7 +763,7 @@
 
       </section>
       <!--Section: Main features & Quick Start-->
-      <section class="packges2">
+      <section class="packges2 wow .delay-1s slideInRight">
         <div class="swiper-container">
           <div class="swiper-wrapper">
             <div class="swiper-slide">
@@ -798,19 +780,18 @@
                       <h5 class="card-title"><a>A Trip to Villa De Cosa 7 Days 6 Nights</a></h5>
                       <!-- Text -->
                       <br>
-                      <p class="card-text"> <i class="fa fa-map-marker-alt
-" aria-hidden="true"></i> Sydney, Australia
+                      <p class="card-text"> <i class="fa fa-map-marker-alt" aria-hidden="true"></i> Sydney, Australia
                       </p>
                       <!-- Button -->
                     </div>
                     <div class="col-5 float-right">
                       <p>7 Days</p>
-                      <span>
-                        $<span class="text-price">136</span>/person
+                      <span style="font-size: 11pt;">
+                        <span class="usd">$</span> <span class="text-price">136</span>/person
                       </span>
                       <br>
                       <p class="small"> <i class="fa fa-star p-1"
-                          style="background: yellow;color:#fff;border-radius:50%" aria-hidden="true"></i> 4.5 (14)
+                          style="background: yellow;color:#fff;border-radius:50%" aria-hidden="true"></i> <span style="color: #000;font-weight:700">4.5</span> (14)
                       </p>
                     </div>
                   </div>
@@ -838,15 +819,15 @@
                       <!-- Button -->
                     </div>
                     <div class="col-5 float-right">
-                        <p>7 Days</p>
-                        <span>
-                          $<span class="text-price">136</span>/person
-                        </span>
-                        <br>
-                        <p class="small"> <i class="fa fa-star p-1"
-                            style="background: yellow;color:#fff;border-radius:50%" aria-hidden="true"></i> 4.5 (14)
-                        </p>
-                      </div>
+                      <p>7 Days</p>
+                      <span style="font-size: 11pt;">
+                        <span class="usd">$</span> <span class="text-price">136</span>/person
+                      </span>
+                      <br>
+                      <p class="small"> <i class="fa fa-star p-1"
+                          style="background: yellow;color:#fff;border-radius:50%" aria-hidden="true"></i> <span style="color: #000;font-weight:700">4.5</span> (14)
+                      </p>
+                    </div>
                   </div>
 
                 </div>
@@ -868,20 +849,17 @@
                       <h5 class="card-title"><a>Port Blair, H Nights with Flights </a></h5>
                       <!-- Text -->
                       <br>
-                      <p class="card-text"> <i class="fa fa-map-marker-alt
-" aria-hidden="true"></i>Phant , Vitenam
-
-                      </p>
+                      <p class="card-text"> <i class="fa fa-map-marker-alt" aria-hidden="true"></i>Phant , Vitenam</p>
                       <!-- Button -->
                     </div>
                     <div class="col-5 float-right">
                       <p>7 Days</p>
-                      <span>
-                        $<span class="text-price">136</span>/person
+                      <span style="font-size: 11pt;">
+                        <span class="usd">$</span> <span class="text-price">136</span>/person
                       </span>
                       <br>
                       <p class="small"> <i class="fa fa-star p-1"
-                          style="background: yellow;color:#fff;border-radius:50%" aria-hidden="true"></i> 4.5 (14)
+                          style="background: yellow;color:#fff;border-radius:50%" aria-hidden="true"></i> <span style="color: #000;font-weight:700">4.5</span> (14)
                       </p>
                     </div>
                   </div>
@@ -905,19 +883,18 @@
                       <h5 class="card-title"><a>A Trip to Villa De Cosa 7 Days 6 Nights</a></h5>
                       <!-- Text -->
                       <br>
-                      <p class="card-text"> <i class="fa fa-map-marker-alt
-" aria-hidden="true"></i> Sydney, Australia
+                      <p class="card-text"> <i class="fa fa-map-marker-alt" aria-hidden="true"></i> Sydney, Australia
                       </p>
                       <!-- Button -->
                     </div>
                     <div class="col-5 float-right">
                       <p>7 Days</p>
-                      <span>
-                        $<span class="text-price">136</span>/person
+                      <span style="font-size: 11pt;">
+                        <span class="usd">$</span> <span class="text-price">136</span>/person
                       </span>
                       <br>
                       <p class="small"> <i class="fa fa-star p-1"
-                          style="background: yellow;color:#fff;border-radius:50%" aria-hidden="true"></i> 4.5 (14)
+                          style="background: yellow;color:#fff;border-radius:50%" aria-hidden="true"></i> <span style="color: #000;font-weight:700">4.5</span> (14)
                       </p>
                     </div>
                   </div>
@@ -945,15 +922,15 @@
                       <!-- Button -->
                     </div>
                     <div class="col-5 float-right">
-                        <p>7 Days</p>
-                        <span>
-                          $<span class="text-price">136</span>/person
-                        </span>
-                        <br>
-                        <p class="small"> <i class="fa fa-star p-1"
-                            style="background: yellow;color:#fff;border-radius:50%" aria-hidden="true"></i> 4.5 (14)
-                        </p>
-                      </div>
+                      <p>7 Days</p>
+                      <span style="font-size: 11pt;">
+                        <span class="usd">$</span> <span class="text-price">136</span>/person
+                      </span>
+                      <br>
+                      <p class="small"> <i class="fa fa-star p-1"
+                          style="background: yellow;color:#fff;border-radius:50%" aria-hidden="true"></i> <span style="color: #000;font-weight:700">4.5</span> (14)
+                      </p>
+                    </div>
                   </div>
 
                 </div>
@@ -975,20 +952,17 @@
                       <h6 class="card-title"><a>Port Blair, H Nights with Flights </a></h6>5
                       <!-- Text -->
                       <br>
-                      <p class="card-text"> <i class="fa fa-map-marker-alt
-" aria-hidden="true"></i>Phant , Vitenam
-
-                      </p>
+                      <p class="card-text"> <i class="fa fa-map-marker-alt" aria-hidden="true"></i>Phant , Vitenam</p>
                       <!-- Button -->
                     </div>
                     <div class="col-5 float-right">
                       <p>7 Days</p>
-                      <span>
-                        $<span class="text-price">136</span>/person
+                      <span style="font-size: 11pt;">
+                        <span class="usd">$</span> <span class="text-price">136</span>/person
                       </span>
                       <br>
                       <p class="small"> <i class="fa fa-star p-1"
-                          style="background: yellow;color:#fff;border-radius:50%" aria-hidden="true"></i> 4.5 (14)
+                          style="background: yellow;color:#fff;border-radius:50%" aria-hidden="true"></i> <span style="color: #000;font-weight:700">4.5</span> (14)
                       </p>
                     </div>
                   </div>
@@ -1012,19 +986,18 @@
                       <h5 class="card-title"><a>A Trip to Villa De Cosa 7 Days 6 Nights</a></h5>
                       <!-- Text -->
                       <br>
-                      <p class="card-text"> <i class="fa fa-map-marker-alt
-" aria-hidden="true"></i> Sydney, Australia
+                      <p class="card-text"> <i class="fa fa-map-marker-alt" aria-hidden="true"></i> Sydney, Australia
                       </p>
                       <!-- Button -->
                     </div>
                     <div class="col-5 float-right">
                       <p>7 Days</p>
-                      <span>
-                        $<span class="text-price">136</span>/person
+                      <span style="font-size: 11pt;">
+                        <span class="usd">$</span> <span class="text-price">136</span>/person
                       </span>
                       <br>
                       <p class="small"> <i class="fa fa-star p-1"
-                          style="background: yellow;color:#fff;border-radius:50%" aria-hidden="true"></i> 4.5 (14)
+                          style="background: yellow;color:#fff;border-radius:50%" aria-hidden="true"></i> <span style="color: #000;font-weight:700">4.5</span> (14)
                       </p>
                     </div>
                   </div>
@@ -1052,15 +1025,15 @@
                       <!-- Button -->
                     </div>
                     <div class="col-5 float-right">
-                        <p>7 Days</p>
-                        <span>
-                          $<span class="text-price">136</span>/person
-                        </span>
-                        <br>
-                        <p class="small"> <i class="fa fa-star p-1"
-                            style="background: yellow;color:#fff;border-radius:50%" aria-hidden="true"></i> 4.5 (14)
-                        </p>
-                      </div>
+                      <p>7 Days</p>
+                      <span style="font-size: 11pt;">
+                        <span class="usd">$</span> <span class="text-price">136</span>/person
+                      </span>
+                      <br>
+                      <p class="small"> <i class="fa fa-star p-1"
+                          style="background: yellow;color:#fff;border-radius:50%" aria-hidden="true"></i> <span style="color: #000;font-weight:700">4.5</span> (14)
+                      </p>
+                    </div>
                   </div>
 
                 </div>
@@ -1082,20 +1055,17 @@
                       <h5 class="card-title"><a>Port Blair, H Nights with Flights </a></h5>
                       <!-- Text -->
                       <br>
-                      <p class="card-text"> <i class="fa fa-map-marker-alt
-" aria-hidden="true"></i>Phant , Vitenam
-
-                      </p>
+                      <p class="card-text"> <i class="fa fa-map-marker-alt" aria-hidden="true"></i>Phant , Vitenam</p>
                       <!-- Button -->
                     </div>
                     <div class="col-5 float-right">
                       <p>7 Days</p>
-                      <span>
-                        $<span class="text-price">136</span>/person
+                      <span style="font-size: 11pt;">
+                        <span class="usd">$</span> <span class="text-price">136</span>/person
                       </span>
                       <br>
                       <p class="small"> <i class="fa fa-star p-1"
-                          style="background: yellow;color:#fff;border-radius:50%" aria-hidden="true"></i> 4.5 (14)
+                          style="background: yellow;color:#fff;border-radius:50%" aria-hidden="true"></i> <span style="color: #000;font-weight:700">4.5</span> (14)
                       </p>
                     </div>
                   </div>
@@ -1119,19 +1089,18 @@
                       <h5 class="card-title"><a>A Trip to Villa De Cosa 7 Days 6 Nights</a></h5>
                       <!-- Text -->
                       <br>
-                      <p class="card-text"> <i class="fa fa-map-marker-alt
-" aria-hidden="true"></i> Sydney, Australia
+                      <p class="card-text"> <i class="fa fa-map-marker-alt" aria-hidden="true"></i> Sydney, Australia
                       </p>
                       <!-- Button -->
                     </div>
                     <div class="col-5 float-right">
                       <p>7 Days</p>
-                      <span>
-                        $<span class="text-price">136</span>/person
+                      <span style="font-size: 11pt;">
+                        <span class="usd">$</span> <span class="text-price">136</span>/person
                       </span>
                       <br>
                       <p class="small"> <i class="fa fa-star p-1"
-                          style="background: yellow;color:#fff;border-radius:50%" aria-hidden="true"></i> 4.5 (14)
+                          style="background: yellow;color:#fff;border-radius:50%" aria-hidden="true"></i> <span style="color: #000;font-weight:700">4.5</span> (14)
                       </p>
                     </div>
                   </div>
@@ -1149,23 +1118,23 @@
 
       </section>
 
-      <hr class="mb-5">
+      <br class="mb-5">
     </div>
     <!--Section: More-->
-    <section class="why-us mt-5 pt-5" style="background : #23b2e5;color: #fff">
-      <div class="container">
+    <section class="why-us mt-5" style="background : #23b2e5;color: #fff">
+      <div class="container  wow .delay-1s slideInLeft">
         <!--Grid row-->
         <div class="row">
 
           <!--Grid column-->
-          <div class="col-md-6 mb-4 mt-5">
-            <h3 class="text-uppercase ">Why us</h3>
+          <div class="col-md-6 mt-5">
+            <h4 class="text-uppercase title">Why us</h4>
             <span>We make all the process easy</span> <br><br>
             <ul class="list-unstyled">
 
               <li>
                 <div class="row">
-                  <i class="fas fa-globe fa-3x pt-3"></i>
+                  <img src="img/icon/Icon Earth.png" class=" d-block mt-4" alt="">
                   <div class="col-md-8 col-sm-12 float-right">
                     <h4>All Around the World Tours</h4>
                     <p>Dummy text ever since the 1500s, when an unknown printer took. A galley of type and scrambled
@@ -1175,7 +1144,7 @@
               </li>
               <li>
                 <div class="row">
-                  <i class="fas fa-parachute-box fa-3x pt-3"></i>
+                  <img src="img/icon/Icon Travel.png" class=" d-block mt-4" alt="">
                   <div class="col-md-8 col-sm-12 float-right">
                     <h4>Private & Customized Tours</h4>
                     <p>Dummy text ever since the 1500s, when an unknown printer took. A galley of type and scrambled
@@ -1185,7 +1154,7 @@
               </li>
               <li>
                 <div class="row">
-                  <i class="fas fa-passport fa-3x pt-3"></i>
+                  <img src="img/icon/Icon book.png" class=" d-block mt-4" alt="">
                   <div class="col-md-8 col-sm-12 float-right">
                     <h4>Immigration & Passport Help</h4>
                     <p>Dummy text ever since the 1500s, when an unknown printer took. A galley of type and scrambled it
@@ -1204,7 +1173,7 @@
           <!--Grid column-->
           <div class="col-md-6 mb-4">
 
-            <img src="img/01-Home2p-Recovered.png" class="d-block w-100" height="100%" alt="">
+            <img src="img/01-Home2p-Recovered.png" class="d-block" height="100%" width="80%" alt="">
 
 
           </div>
@@ -1223,41 +1192,36 @@
         <!-- <img src="img/vacation/Travel.png" class="d-block w-100" alt=""> -->
       </div>
 
-      <div class="sss">
-        <div class="row">
+      <div class="container">
+        <img src="img/icon/Map.png" class="w-100" alt="">
+        <div class="row mt-4">
           <div class="col-md-2 col-xs-12 text-center">
-            <img src="img/icon/Africa.png" alt="Africa">
-            <p class="ball"></p>
+
             <a href="#!" class="text-uppercase bold55">Africa</a>
             <p class="text-uppercase bold55"> 1505 Locations</p>
           </div>
           <div class="col-md-2 col-xs-12 text-center">
-            <img src="img/icon/Asia.png" alt="Asia">
-            <p class="ball"></p>
+
             <a href="#!" class="text-uppercase bold55">Asia</a>
             <p class="text-uppercase bold55"> 7535 Locations</p>
           </div>
           <div class="col-md-2 col-xs-12 text-center">
-            <img src="img/icon/North America.png" alt="North America">
-            <p class="ball3"></p>
+
             <a href="#!" class="text-uppercase bold55">North America</a>
             <p class="text-uppercase bold55"> 3335 Locations</p>
           </div>
           <div class="col-md-2 col-xs-12 text-center">
-            <img src="img/icon/Australia.png" alt="Australia">
-            <p class="ball"></p>
+
             <a href="#!" class="text-uppercase bold55">Australia</a>
             <p class="text-uppercase bold55"> 1973 Locations</p>
           </div>
           <div class="col-md-2 col-xs-12 text-center">
-            <img src="img/icon/Europe.png" alt="Europe">
-            <p class="ball"></p>
+
             <a href="#!" class="text-uppercase bold55">Europe</a>
             <p class="text-uppercase bold55"> 3633 Locations</p>
           </div>
           <div class="col-md-2 col-xs-12 text-center">
-            <img src="img/icon/South America.png" alt="South America">
-            <div class="ball"></div>
+
             <a href="#!" class="text-uppercase bold55">South America</a>
             <p class="text-uppercase bold55"> 1117 Locations</p>
           </div>
@@ -1340,7 +1304,7 @@
           </div>
           <!-- Grid column -->
 
-          <hr class="clearfix w-100 d-md-none">
+
 
           <!-- Grid column -->
           <div class="col-md-3 mx-auto">
@@ -1392,7 +1356,8 @@
 
           </div>
           <!-- Grid column -->
-          <ul class="navbar-nav mr-auto justify-content-center d-flex  navdown col-md-6 float-left col-sm-12">
+          <ul
+            class="navbar-nav mr-auto justify-content-center d-flex list-unstyled navdown col-md-6 float-left col-sm-12">
             <li class="nav-item active">
               <a class="nav-link text-uppercase  whitext" href="index.html">Home</a>
             </li>
@@ -1462,7 +1427,7 @@
   <!--Main layout-->
 
   <!--Footer-->
-  <footer class=" text-center font-small wow fadeIn container">
+  <footer class=" text-center font-small wow fadeIn container" style="margin-top: -123px;">
     <!-- Footer Links -->
 
     <!-- Social icons -->
@@ -1472,14 +1437,15 @@
         <div class="col-md-8 col-xs-12">
           <form class="input-group">
             <!-- <p>Subscribe to Newsletter</p> -->
-            <label for="#subsc" class="font-weight-bold w-100">Subscribe to Newsletter</label>
+            <label for="#subsc" class="font-weight-bold w-100 text-uppercase">Subscribe to Newsletter</label>
             <br>
             <input type="text" class="form-control form-control-sm d-block" id="subsc" placeholder="Email"
               style="padding:25px">
             <div class="input-group-append">
-              <button type="submit">Send</button>
+              <button class="text-uppercase" type="submit">Send</button>
             </div>
           </form>
+          <p class="text-left" style="color: #6b6b6b;font-style: italic;">* we don’t spam</p>
         </div>
 
       </div>
@@ -1487,26 +1453,25 @@
         <div class="row">
           <div class="col-md-4 col-xs-12">
             <div class="media">
-              <i class="fa fa-phone fa-2x pt-1" aria-hidden="true"></i>
+              <img src="img/icon/Phone Icon.png" class="pt-2" alt="">
               <div class="media-body">
 
-                <span>+201221501020</span>
+                <span>+20 122 150 1020</span>
                 <br>
-                <span>+201221501020</span>
+                <span>+20 122 150 1020</span>
               </div>
             </div>
           </div>
-          <div class="col-md-8 col-xs-12">
-            <i class="fas fa-map-marker-alt
- fa-2x pr-3"></i>
+          <div class="col-md-8 col-xs-12 foot">
+            <img src="img/icon/Location Icon.png" class=" pr-2" alt="">
             <span>El-Agamy – Hanovel Alexandria - Egypt</span>
           </div>
-        </div>
-        <div class="col-md-6 col-xs-12 float-left mt-4  text-justify">
-          <i class="fa fa-envelope fa-2x pr-3" aria-hidden="true"></i>
-          <span>info@elahlamtravel.com</span>
-        </div>
 
+          <div class="col-md-8 col-xs-12 float-left mt-4 text-justify">
+            <img src="img/icon/Mail Icon.png" class=" pr-2" alt="">
+            <span>info@elahlamtravel.com</span>
+          </div>
+        </div>
       </div>
     </div>
 
@@ -1515,7 +1480,7 @@
   </footer>
   <!--Copyright-->
   <div class="footer-copyright">
-    <p class="text-center m-auto pt-5 mb-5 font-weight-bold ">Copyright © 2019 elahlamtravel.com All rights reserved
+    <p class=" m-auto pt-5 mb-5">Copyright © 2019 elahlamtravel.com All rights reserved
       Designed & Developed by: 2winDesign.com</p>
   </div>
   <!--/.Copyright-->
