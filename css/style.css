@@ -7,7 +7,7 @@ html,
 body,
 .view {
   height: 100%;
-  font-family: "Poppins", sans-serif;
+  font-family: "Poppins";
   font-weight: 500;
 }
 
@@ -19,7 +19,7 @@ body {
 
 :root {
   --color: #003a6c;
-  --fontMyraid: myriad-pro, sans-serif;
+  --fontMyraid: myriad-pro;
 }
 
 html,
@@ -158,7 +158,8 @@ a.nav-link:hover {
   padding: 7px 11px;
   border-left: 5px solid #019fe9;
   width: 200px;
-  background-color: #fff
+  background-color: #fff;
+  text-align: justify;
 }
 
 .right-side h4 {
@@ -410,10 +411,13 @@ strong.overlay {
   position: absolute;
   left: 5px;
 }
-
+.packges p,
+.packges2 p {
+  margin-bottom: 5px;
+}
 .packges .small,
 .packges2 .small {
-  margin-top: 23px;
+  margin-top: 11px;
 }
 
 .packges .card .card-body .card-text,
@@ -422,7 +426,7 @@ strong.overlay {
   font-size: .9rem;
   font-weight: 400;
   position: absolute;
-  bottom: 17px;
+  bottom: 4px;
 }
 
 .packges .card .card-body h5 {
@@ -509,13 +513,19 @@ strong.overlay {
 
 
 .vacation {
-  background-image: url("../img/Logo 1.png");
+  /* background-image: url("../img/Logo 1.png"); */
   background-repeat: no-repeat;
   background-position: bottom;
   background-size: cover;
   padding-bottom: 149px;
   width: 100vw;
+  position: relative;
 
+}
+.vacation .treeimg{
+  position: absolute;
+  bottom: 0;
+  width: 100%;
 }
 
 .vacation h5::after {
@@ -548,6 +558,8 @@ strong.overlay {
 .navdown {
   padding-top: 103px;
   flex-direction: row;
+  z-index: 2;
+
 }
 
 .navdown li {
