@@ -637,10 +637,9 @@ strong.overlay {
 /* ##################################################################### */
 
 .vacation {
-
   width: 100vw;
   position: relative;
-margin-bottom: 50px;
+  margin-bottom: 50px;
 }
 
 .treeimg {
@@ -710,7 +709,7 @@ margin-bottom: 50px;
   color: #fff;
   padding-top: 8px;
 }
-.navdown .row{
+.navdown .row {
   margin-top: 5px;
   margin-bottom: 0px;
 }
@@ -739,9 +738,9 @@ margin-bottom: 50px;
   .whitext {
     color: #003a6c !important;
   }
-  .navdown .row{
+  .navdown .row {
     margin-top: 68px;
-    margin-bottom: 40px;  
+    margin-bottom: 40px;
   }
 }
 
@@ -874,7 +873,9 @@ input:focus {
   color: #6b6b6b;
   text-align: end;
 }
-
+#subsc:focus{
+  z-index: 0;
+}
 @media (max-width: 768px) {
   .footer-copyright p {
     width: 100%;
@@ -887,4 +888,12 @@ input:focus {
   .footer {
     margin-top: auto;
   }
+}
+
+#goUp {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  display: none;
+  z-index: 3;
 }

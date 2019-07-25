@@ -17,14 +17,19 @@
     <!-- Your custom styles (optional) -->
     <link href="css/style.css" rel="stylesheet">
     <style>
-        i.fas.fa-angle-down.rotate-icon {
+        i.fas.fa-angle-up.rotate-icon {
             font-size: 45px;
-            float: right
+            float: right;
+            transition: .5s ease-in-out;
+        }
+        .collapsed i.fas.fa-angle-up.rotate-icon{
+            transform:rotate(180deg);
         }
     </style>
 </head>
 
 <body>
+    <button type="button" class="btn btn-primary px-3" id="goUp" ><i class="fas fa-arrow-up fa-2x"></i></button>
     <nav class="navbar navbar-dark elegant-color-dark p-0">
         <div class="container">
             <div>
@@ -124,7 +129,7 @@
                             aria-controls="collapseOne1">
                             <h5 class="mb-0">
                                 How can I modify/cancel a previous booking? <i
-                                    class="fas fa-angle-down rotate-icon"></i>
+                                    class="fas fa-angle-up rotate-icon"></i>
                             </h5>
                         </a>
                     </div>
@@ -161,7 +166,7 @@
                             aria-expanded="false" aria-controls="collapseTwo2">
                             <h5 class="mb-0">
                                 How can I access more information about hotels, car rentals and <i
-                                    class="fas fa-angle-down rotate-icon"></i>
+                                    class="fas fa-angle-up rotate-icon"></i>
                             </h5>
                         </a>
                     </div>
@@ -198,7 +203,7 @@
                             aria-expanded="false" aria-controls="collapseThree3">
                             <h5 class="mb-0">
                                 What do I need for making an online payment?<i
-                                    class="fas fa-angle-down rotate-icon"></i>
+                                    class="fas fa-angle-up rotate-icon"></i>
                             </h5>
                         </a>
                     </div>
@@ -229,11 +234,11 @@
 
                     <!-- Card header -->
                     <div class="card-header" role="tab" id="headingOne4">
-                        <a data-toggle="collapse" data-parent="#accordionEx" href="#collapseOne4" aria-expanded="true"
-                            aria-controls="collapseOne4">
+                        <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx" href="#collapseOne4"
+                         aria-expanded="false" aria-controls="collapseOne4">
                             <h5 class="mb-0">
                                 What happens if I cancel my booking that I paid for online and <i
-                                    class="fas fa-angle-down rotate-icon"></i>
+                                    class="fas fa-angle-up rotate-icon"></i>
                             </h5>
                         </a>
                     </div>
@@ -264,11 +269,11 @@
 
                     <!-- Card header -->
                     <div class="card-header" role="tab" id="headingOne5">
-                        <a data-toggle="collapse" data-parent="#accordionEx" href="#collapseOne5" aria-expanded="true"
+                        <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx" href="#collapseOne5" aria-expanded="false"
                             aria-controls="collapseOne5">
                             <h5 class="mb-0">
                                 How can I access more information about hotels, car rentals and<i
-                                    class="fas fa-angle-down rotate-icon"></i>
+                                    class="fas fa-angle-up rotate-icon"></i>
                             </h5>
                         </a>
                     </div>
@@ -300,11 +305,11 @@
 
                     <!-- Card header -->
                     <div class="card-header" role="tab" id="headingOne6">
-                        <a data-toggle="collapse" data-parent="#accordionEx" href="#collapseOne6" aria-expanded="true"
+                        <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx" href="#collapseOne6" aria-expanded="false"
                             aria-controls="collapseOne6">
                             <h5 class="mb-0">
                                 How can I modify/cancel a previous booking? <i
-                                    class="fas fa-angle-down rotate-icon"></i>
+                                    class="fas fa-angle-up rotate-icon"></i>
                             </h5>
                         </a>
                     </div>
@@ -341,7 +346,7 @@
                             aria-expanded="false" aria-controls="collapseTwo7">
                             <h5 class="mb-0">
                                 How can I access more information about hotels, car rentals and <i
-                                    class="fas fa-angle-down rotate-icon"></i>
+                                    class="fas fa-angle-up rotate-icon"></i>
                             </h5>
                         </a>
                     </div>
@@ -378,7 +383,7 @@
                             aria-expanded="false" aria-controls="collapseThree8">
                             <h5 class="mb-0">
                                 What do I need for making an online payment?<i
-                                    class="fas fa-angle-down rotate-icon"></i>
+                                    class="fas fa-angle-up rotate-icon"></i>
                             </h5>
                         </a>
                     </div>
@@ -409,11 +414,11 @@
 
                     <!-- Card header -->
                     <div class="card-header" role="tab" id="headingOne9">
-                        <a data-toggle="collapse" data-parent="#accordionEx" href="#collapseOne9" aria-expanded="true"
+                        <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx" href="#collapseOne9" aria-expanded="false"
                             aria-controls="collapseOne9">
                             <h5 class="mb-0">
                                 What happens if I cancel my booking that I paid for online and <i
-                                    class="fas fa-angle-down rotate-icon"></i>
+                                    class="fas fa-angle-up rotate-icon"></i>
                             </h5>
                         </a>
                     </div>
@@ -444,11 +449,11 @@
 
                     <!-- Card header -->
                     <div class="card-header" role="tab" id="headingOne10">
-                        <a data-toggle="collapse" data-parent="#accordionEx" href="#collapseOne10" aria-expanded="true"
+                        <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx" href="#collapseOne10" aria-expanded="false"
                             aria-controls="collapseOne10">
                             <h5 class="mb-0">
                                 How can I access more information about hotels, car rentals and<i
-                                    class="fas fa-angle-down rotate-icon"></i>
+                                    class="fas fa-angle-up rotate-icon"></i>
                             </h5>
                         </a>
                     </div>

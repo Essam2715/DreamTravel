@@ -74,3 +74,25 @@ $(window).on("load", function() {
   $("body").css("overflow", "auto");
   $(".loader-page").fadeOut(1000);
 });
+
+
+let goUp = document.getElementById('goUp');
+window.onscroll = () => {
+
+  if (window.pageYOffset >= 1000) {
+
+    goUp.style.display = 'block'
+    
+  }else{
+    goUp.style.display = 'none'
+  }
+
+}
+
+goUp.onclick = () => {
+
+  window.scrollTo({top: 0, behavior: 'smooth'});
+
+}
+
+
