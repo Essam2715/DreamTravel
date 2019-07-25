@@ -637,17 +637,16 @@ strong.overlay {
 /* ##################################################################### */
 
 .vacation {
-  background-repeat: no-repeat;
-  background-position: bottom;
-  background-size: cover;
-  padding-bottom: 149px;
+
   width: 100vw;
   position: relative;
+margin-bottom: 50px;
 }
 
-.vacation .treeimg {
+.treeimg {
   position: absolute;
   bottom: 0;
+  left: 0;
   width: 100%;
 }
 
@@ -682,6 +681,7 @@ strong.overlay {
   padding-top: 103px;
   flex-direction: row;
   z-index: 2;
+  margin: -30px auto;
 }
 
 .navdown li {
@@ -710,7 +710,10 @@ strong.overlay {
   color: #fff;
   padding-top: 8px;
 }
-
+.navdown .row{
+  margin-top: 5px;
+  margin-bottom: 0px;
+}
 @media (max-width: 768px) {
   .vacation {
     background-image: none;
@@ -735,6 +738,10 @@ strong.overlay {
 
   .whitext {
     color: #003a6c !important;
+  }
+  .navdown .row{
+    margin-top: 68px;
+    margin-bottom: 40px;  
   }
 }
 
