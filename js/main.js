@@ -1,6 +1,8 @@
 // Animations initialization
 new WOW().init();
 
+//   carsoul In Site
+
 if (window.matchMedia("(max-width: 768px)").matches) {
   var swiper = new Swiper(".swiperatneen", {
     slidesPerView: 1,
@@ -70,10 +72,7 @@ var swiper = new Swiper(".packges2 .swiper-container", {
   }
 });
 
-$(window).on("load", function() {
-  $("body").css("overflow", "auto");
-  $(".loader-page").fadeOut(1000);
-});
+// Scroll Up Button
 
 let goUp = document.getElementById("goUp");
 window.onscroll = () => {
@@ -87,6 +86,13 @@ window.onscroll = () => {
 goUp.onclick = () => {
   window.scrollTo({ top: 0, behavior: "smooth" });
 };
+
+// Preloader
+
+$(window).on("load", function() {
+  $("body").css("overflow", "auto");
+  $(".loader-page").fadeOut(1000);
+});
 
 window.addEventListener("load", () => {
   const preload = document.querySelector(".preload");
