@@ -75,24 +75,20 @@ $(window).on("load", function() {
   $(".loader-page").fadeOut(1000);
 });
 
-
-let goUp = document.getElementById('goUp');
+let goUp = document.getElementById("goUp");
 window.onscroll = () => {
-
   if (window.pageYOffset >= 1000) {
-
-    goUp.style.display = 'block'
-    
-  }else{
-    goUp.style.display = 'none'
+    goUp.style.display = "block";
+  } else {
+    goUp.style.display = "none";
   }
-
-}
+};
 
 goUp.onclick = () => {
+  window.scrollTo({ top: 0, behavior: "smooth" });
+};
 
-  window.scrollTo({top: 0, behavior: 'smooth'});
-
-}
-
-
+window.addEventListener("load", () => {
+  const preload = document.querySelector(".preload");
+  preload.classList.add("preload-finish");
+});
