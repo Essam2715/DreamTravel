@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css?family=Cairo&display=swap");
+
+html {
+  width: 100vw;
+  font-family: "Cairo", sans-serif;
+}
+body {
+  direction: rtl;
+  text-align: start;
+  font-family: "Cairo", sans-serif;
+}
+nav.navbar.navbar-expand-lg.navbar-dark.second-nav {
+  background-image: -webkit-gradient(linear, right top, left top, color-stop(72%, #0f4479), color-stop(28%, #fff));
+  background-image: linear-gradient(to left, #0f4479 72%, #fff 28%);
+}
+
+a.navbar-brand {
+  margin-right: 0;
+  margin-left: 11vw;
+}
+
+li.nav-item.right-side {
+  border-right: 5px solid #019fe9;
+  border-left: 0;
+}
+
+.right-side h4 img {
+  float: right;
+  position: absolute;
+  right: -29px;
+  top: 2px;
+}
+
+.right-side h4 {
+  position: relative;
+}
+
+ul.navbar-nav.text-center {
+  padding: 0;
+}
+section.why-us.mt-5 {
+  text-align: right;
+}
+
+.col-md-6.col-xs-12.float-right.navdown {
+  float: left;
+}
+
+button.text-uppercase {
+  border-right: 2px solid #ccc;
+}
+.packges .usd,
+.packges2 .usd {
+  right: 5px;
+}
+.navdown li {
+  border-right: none;
+
+  border-left: 2px solid #fff;
+  margin: 0;
+  padding-left: 19px;
+}
+footer button[type="submit"] {
+  border: 1px solid #ccc;
+  padding: 0 20px;
+}
+
+.topnav-info {
+  border-right: 0px;
+  border-left: 1px solid #ccc;
+  font-size: 9pt;
+  padding-left: 20px;
+  padding-right: 0;
+  color: #808080;
+}
+
+#input_img {
+  position: absolute;
+  bottom: 4px;
+  right: inherit;
+  left: 27px !important;
+  width: 32px;
+  height: 32px;
+  cursor: pointer;
+}
+.locations .swiper-button-next,
+.locations .swiper-button-prev {
+  right: 17%;
+}
+.locations .swiper-button-prev {
+  margin-left: 0;
+}
+.swiper-button-next {
+  margin-right: -2%;
+}
+@media (max-width: 678px) {
+  .vacation ul {
+    padding: 0;
+  }
+  footer.text-center.font-small.wow.fadeIn.container,
+  footer .col-md-6.col-xs-12.mb-4,
+  footer .col-md-6.col-xs-12.mb-4 .col-md-8.col-xs-12 {
+    padding: 0;
+  }
+  footer button[type="submit"] {
+    margin-left: 0;
+  }
+  .foot {
+    text-align: right;
+  }
+}
+.headerimg {
+  width: 100%;
+}
